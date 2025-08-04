@@ -11,24 +11,24 @@ cModel Technology
 d/home/maker/intelFPGA/20.1/modelsim_ase/bin
 vseven_segment_decoder
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1753670450
+Z1 !s110 1754264017
 !i10b 1
-!s100 FglKBIgAiRi9WS:0LF?k73
+!s100 BIISgALEdKi6QjaZcliTP1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Id6QQZGKk659`TbSM^E:JP2
+IoS01ohOjnTZ9PUjSN1M5U0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z4 d/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment
-w1753670395
+w1754263282
 8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-7Seg-Decoder.sv
 F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-7Seg-Decoder.sv
-!i122 0
+!i122 2
 L0 1 40
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1753670450.000000
+Z6 !s108 1754264017.000000
 !s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-7Seg-Decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-7Seg-Decoder.sv|
 !i113 1
@@ -47,7 +47,7 @@ R4
 w1753669971
 8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-TestBench.sv
 F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-TestBench.sv
-!i122 1
+!i122 3
 L0 1 31
 R5
 r1
