@@ -1,8 +1,22 @@
-/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-TestBench.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-TestBench.sv
+/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-Multi-Display.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-Multi-Display.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module multi_digit_display
+
+Top level modules:
+	multi_digit_display
+
+} {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-TestBench.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-TestBench.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tb_seven_segment_decoder
 
 Top level modules:
 	tb_seven_segment_decoder
+
+} {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-TB-Multi-Display.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/seven_segment/Q1-TB-Multi-Display.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_multi_digit_display
+
+Top level modules:
+	tb_multi_digit_display
 
 } {} {}}

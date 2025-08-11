@@ -8,7 +8,7 @@ module seven_segment_decoder (
 
     always_comb begin
         // Default case: inactive segments (all off = all high, since active low)
-        seg = 7'b0000000;
+        seg = ~7'b0000000;
         zero = (D == 4'd0);
 
         case (D)
@@ -32,9 +32,9 @@ module seven_segment_decoder (
 
         // Ripple blanking logic: suppress 0 if RBI = 0
         if (zero && !RBI)
-            seg = 7'b0000000; // Blank the display
+            seg = ~7'b0000000; // Blank the display
 
         // Set RBO: should propagate 0 suppression
-        RBO = zero && !RBI;
+        RBO = ~(zero && !RBI);
     end
 endmodule
