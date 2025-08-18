@@ -1,25 +1,24 @@
 module multi_digit_display #(
     parameter int NUM_DIGITS = 4
 )(
-    input  logic [NUM_DIGITS*4-1:0] number,        // Packed hex digits
-    output logic [NUM_DIGITS-1:0][6:0] seg         // seg[0]=MSB, seg[NUM_DIGITS-1]=LSB
+    input  logic [NUM_DIGITS*4-1:0] number, //input number to be displayed
+    output logic [NUM_DIGITS-1:0][6:0] seg //output bitmap to display on 7 segment
 );
-    logic [NUM_DIGITS-1:0] rbo;
-    logic [NUM_DIGITS-1:0] rbi;
+    logic [NUM_DIGITS-1:0] rbo; //ripple blanking output for blanking leading zeroes
+    logic [NUM_DIGITS-1:0] rbi; //ripple blanking input
 
-    // Start ripple blanking at the most significant digit
-    assign rbi[0] = 1'b0; // 0 means "blank if zero"
-    
-    // Ripple chain: MSB -> ... -> LSB
-    for (genvar i = 1; i < NUM_DIGITS; i++) begin
-        assign rbi[i] = rbo[i-1];
+    // Most significant digit's RBI comes from outside
+    assign rbi[NUM_DIGITS-1] = 1'b0; // start blanking for leading zeros
+
+    // Chain from MSB to LSB
+    for (genvar i = NUM_DIGITS-2; i >= 0; i--) begin
+        assign rbi[i] = rbo[i+1];
     end
 
-    // Instantiate each seven_segment_decoder
+    // Instantiate digits: MSB is highest index
     for (genvar i = 0; i < NUM_DIGITS; i++) begin : digits
-        // Reverse nibble order so seg[0] = MSB
         seven_segment_decoder dec (
-            .D   (number[(NUM_DIGITS-1-i)*4 +: 4]),
+            .D   (number[i*4 +: 4]),
             .RBI (rbi[i]),
             .seg (seg[i]),
             .RBO (rbo[i])
