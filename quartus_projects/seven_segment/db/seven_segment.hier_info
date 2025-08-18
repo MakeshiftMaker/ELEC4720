@@ -1,0 +1,20 @@
+|seven_segment_decoder
+D[0] => Decoder0.IN3
+D[0] => Equal0.IN3
+D[1] => Decoder0.IN2
+D[1] => Equal0.IN2
+D[2] => Decoder0.IN1
+D[2] => Equal0.IN1
+D[3] => Decoder0.IN0
+D[3] => Equal0.IN0
+RBI => always0.IN1
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+RBO <= always0.DB_MAX_OUTPUT_PORT_TYPE
+
+
