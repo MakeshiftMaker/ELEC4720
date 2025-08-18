@@ -1,0 +1,261 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/maker/intelFPGA/20.1/modelsim_ase/bin
+vmult4_tb
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1755484429
+!i10b 1
+!s100 5ZT:HSDbV^JzLS<z5`nTC2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IROEO^DJAF4?Q]DY^MOBla3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z3 d/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1
+w1755483805
+Z4 8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_mult_4.sv
+Z5 F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_mult_4.sv
+!i122 6
+Z6 L0 3 27
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1755484429.000000
+Z8 !s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_mult_4.sv|
+Z9 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_mult_4.sv|
+!i113 1
+Z10 o-work work -sv
+Z11 tCvgOpt 0
+vmult_4
+R0
+Z12 !s110 1755484527
+!i10b 1
+!s100 U29X40NO2CYCMN7Fo5>FO1
+R1
+IlKXAmV]BL8iMk>_[=>H<e0
+R2
+S1
+R3
+w1755483775
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/mult_4.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/mult_4.sv
+!i122 13
+Z13 L0 1 7
+R7
+r1
+!s85 0
+31
+Z14 !s108 1755484527.000000
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/mult_4.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/mult_4.sv|
+!i113 1
+R10
+R11
+vmult_4_display
+R0
+R12
+!i10b 1
+!s100 mGg@R[1Ml`WoHi]=di4fe2
+R1
+IG0UWDab@8Ug@6>8ibUee:0
+R2
+S1
+R3
+w1755483789
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/multi_segment_multiplication.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/multi_segment_multiplication.sv
+!i122 14
+L0 1 34
+R7
+r1
+!s85 0
+31
+R14
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/multi_segment_multiplication.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/multi_segment_multiplication.sv|
+!i113 1
+R10
+R11
+vmult_8
+R0
+R12
+!i10b 1
+!s100 g`^R4f4d7aa;DfhQfl4Z42
+R1
+I2a>NNBDkoUX^jJeI>?oVb2
+R2
+S1
+R3
+w1755483780
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q3_8Bit_Multiplier/mult_8.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q3_8Bit_Multiplier/mult_8.sv
+!i122 17
+R13
+R7
+r1
+!s85 0
+31
+R14
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q3_8Bit_Multiplier/mult_8.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q3_8Bit_Multiplier/mult_8.sv|
+!i113 1
+R10
+R11
+vmulti_digit_display
+R0
+R12
+!i10b 1
+!s100 I:b[Rm@m98Xa0RB^i0A7Y2
+R1
+I`?bI]Zf9ClAf5WGOaZh6:1
+R2
+S1
+R3
+w1755479026
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/multi_digit_display.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/multi_digit_display.sv
+!i122 9
+L0 1 32
+R7
+r1
+!s85 0
+31
+R14
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/multi_digit_display.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/multi_digit_display.sv|
+!i113 1
+R10
+R11
+vseven_segment_decoder
+R0
+R12
+!i10b 1
+!s100 kS7IM373Hl7Q7:;3l<lFR3
+R1
+I_[RLj`CWb2K85J>52MMR=0
+R2
+S1
+R3
+w1754878632
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/seven_segment_decoder.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/seven_segment_decoder.sv
+!i122 10
+L0 1 40
+R7
+r1
+!s85 0
+31
+R14
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/seven_segment_decoder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/seven_segment_decoder.sv|
+!i113 1
+R10
+R11
+vtb_mult4
+R0
+R12
+!i10b 1
+!s100 fd=oM[l9<Hzl3JN9f=Y:_1
+R1
+IQ>:cmSQ:L0H2oR>:C5Qn82
+R2
+S1
+R3
+w1755484491
+R4
+R5
+!i122 15
+R6
+R7
+r1
+!s85 0
+31
+R14
+R8
+R9
+!i113 1
+R10
+R11
+vtb_mult4_display
+R0
+R12
+!i10b 1
+!s100 ]=XRYP68[5[YY]coj=zVB0
+R1
+Ize080mb>Ugb^znHjgM1OC3
+R2
+S1
+R3
+w1755475516
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_multi_segment_multiplication.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_multi_segment_multiplication.sv
+!i122 16
+Z15 L0 1 31
+R7
+r1
+!s85 0
+31
+R14
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_multi_segment_multiplication.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_multi_segment_multiplication.sv|
+!i113 1
+R10
+R11
+vtb_multi_digit_display
+R0
+R12
+!i10b 1
+!s100 Bcg7PK[^nX78foYEbMHUN1
+R1
+I1Q0Fk0?c1l[[Vj6<5>Czd2
+R2
+S1
+R3
+w1754877327
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_multi_digit_display.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_multi_digit_display.sv
+!i122 11
+L0 1 30
+R7
+r1
+!s85 0
+31
+R14
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_multi_digit_display.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_multi_digit_display.sv|
+!i113 1
+R10
+R11
+vtb_seven_segment_decoder
+R0
+R12
+!i10b 1
+!s100 >ZDoBYnYg^c;[dIz6k3720
+R1
+IOnf4a2J[=oc4:lC4OJX^23
+R2
+S1
+R3
+w1753669971
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_seven_segment_decoder.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_seven_segment_decoder.sv
+!i122 12
+R15
+R7
+r1
+!s85 0
+31
+R14
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_seven_segment_decoder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_seven_segment_decoder.sv|
+!i113 1
+R10
+R11

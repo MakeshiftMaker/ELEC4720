@@ -5,7 +5,7 @@ module tb_mult4;
     logic [7:0] c;
 
     // Instantiate multiplier
-    mult4 uut (
+    mult_4 uut (
         .a(a),
         .b(b),
         .c(c)

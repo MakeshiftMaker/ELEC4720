@@ -1,4 +1,4 @@
-module mult4_display (
+module mult_4_display (
     input  logic [3:0] a,
     input  logic [3:0] b,
     output logic [6:0] seg_a,       // single digit
@@ -9,7 +9,7 @@ module mult4_display (
     logic [7:0] product;
 
     // Multiplier
-    mult4 u_mult (
+    mult_4 u_mult (
         .a(a),
         .b(b),
         .c(product)

@@ -1,11 +1,11 @@
-`timescale 1ns/1ps
+//`timescale 1ns/1ps
 
-module tb_mult4;
+module mult4_tb;
     logic [3:0] a, b;
     logic [7:0] c;
 
     // Instantiate multiplier
-    mult4 uut (
+    mult_4 uut (
         .a(a),
         .b(b),
         .c(c)
