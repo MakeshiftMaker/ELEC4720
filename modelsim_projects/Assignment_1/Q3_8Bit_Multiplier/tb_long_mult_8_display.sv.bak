@@ -1,0 +1,43 @@
+module tb_long_mult_8_display;
+
+    logic [7:0] a, b;
+    logic [7*4-1:0] seg_c; // 4 digits packed: {digit3, digit2, digit1, digit0}
+    logic [15:0] product_numeric; // store numeric result
+
+    // DUT
+    long_mult_8_display dut (
+        .a(a),
+        .b(b),
+        .seg_c(seg_c)
+    );
+
+    initial begin
+        $display("   time |    a  |    b  | numeric product | product (on 7-seg bus)");
+        $display("------------------------------------------------------------------");
+
+        // Helper task to display results
+        task display_result();
+            begin
+                product_numeric = a * b;
+                $display("%6t | %4d | %4d | %16d | %028b", $time, a, b, product_numeric, seg_c);
+            end
+        endtask
+
+        // Small values
+        a = 8'd3;   b = 8'd5;    #5;  display_result();
+        a = 8'd9;   b = 8'd9;    #5;  display_result();
+
+        // Edge cases
+        a = 8'd0;   b = 8'd0;    #5;  display_result();
+        a = 8'd0;   b = 8'd200;  #5;  display_result();
+        a = 8'd255; b = 8'd1;    #5;  display_result();
+
+        // Larger products
+        a = 8'd100; b = 8'd200;  #5;  display_result();
+        a = 8'd123; b = 8'd45;   #5;  display_result();
+        a = 8'd255; b = 8'd255;  #5;  display_result();
+
+        $finish;
+    end
+
+endmodule
