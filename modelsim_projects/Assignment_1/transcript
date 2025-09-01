@@ -1,119 +1,66 @@
-# Loading project Assignment_1
-# Compile of multi_digit_display.sv was successful with warnings.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of mult_8.sv was successful.
-# Compile of long_mult_8.sv was successful.
-# Compile of long_mult_4.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# 12 compiles, 0 failed with no errors.
-# Compile of multi_digit_display.sv was successful with warnings.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of mult_8.sv was successful.
-# Compile of long_mult_8.sv was successful.
-# Compile of long_mult_4.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# 12 compiles, 0 failed with no errors.
-# Load canceled
-# Compile of multi_digit_display.sv was successful with warnings.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of mult_8.sv was successful.
-# Compile of long_mult_8.sv was successful.
-# Compile of long_mult_4.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# 12 compiles, 0 failed with no errors.
-# Load canceled
-# Compile of multi_digit_display.sv was successful with warnings.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of mult_8.sv was successful.
-# Compile of long_mult_8.sv was successful.
-# Compile of long_mult_4.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# 12 compiles, 0 failed with no errors.
-vsim work.tb_long_mult_8
-# vsim work.tb_long_mult_8 
-# Start time: 09:22:43 on Sep 01,2025
+# Compile of logic.sv was successful.
+# Compile of tb_logic.sv was successful.
+# 2 compiles, 12 failed with no errors.
+# Compile of logic.sv was successful.
+# Compile of tb_logic.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_q4_logic
+# vsim -gui work.tb_q4_logic 
+# Start time: 09:51:53 on Sep 01,2025
 # Loading sv_std.std
-# Loading work.tb_long_mult_8
-# Loading work.long_mult_8
-add wave -position end  sim:/tb_long_mult_8/a
-add wave -position end  sim:/tb_long_mult_8/b
-add wave -position end  sim:/tb_long_mult_8/c
-run
-# ** Note: $stop    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv(28)
-#    Time: 40 ps  Iteration: 0  Instance: /tb_long_mult_8
-# Break in Module tb_long_mult_8 at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv line 28
-# WARNING: No extended dataflow license exists
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-run
-run
-run
-# ** Note: $stop    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv(28)
-#    Time: 40 ps  Iteration: 0  Instance: /tb_long_mult_8
-# Break in Module tb_long_mult_8 at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv line 28
+# Loading work.tb_q4_logic
+# Loading work.logic_unit
+run -all
+# Time | F  A  B -> Y (expected)
+# 1000 | F=00  A=0  B=0  ->  Y=0  (expected=0)
+# 2000 | F=01  A=0  B=0  ->  Y=0  (expected=0)
+# 3000 | F=10  A=0  B=0  ->  Y=0  (expected=0)
+# 4000 | F=11  A=0  B=0  ->  Y=f  (expected=f)
+# 5000 | F=00  A=0  B=0  ->  Y=0  (expected=0)
+# 6000 | F=01  A=0  B=0  ->  Y=0  (expected=0)
+# 7000 | F=10  A=0  B=0  ->  Y=0  (expected=0)
+# 8000 | F=11  A=0  B=0  ->  Y=f  (expected=f)
+# 9000 | F=00  A=f  B=0  ->  Y=0  (expected=0)
+# 10000 | F=01  A=f  B=0  ->  Y=f  (expected=f)
+# 11000 | F=10  A=f  B=0  ->  Y=f  (expected=f)
+# 12000 | F=11  A=f  B=0  ->  Y=0  (expected=0)
+# 13000 | F=00  A=0  B=f  ->  Y=0  (expected=0)
+# 14000 | F=01  A=0  B=f  ->  Y=f  (expected=f)
+# 15000 | F=10  A=0  B=f  ->  Y=f  (expected=f)
+# 16000 | F=11  A=0  B=f  ->  Y=0  (expected=0)
+# 17000 | F=00  A=f  B=0  ->  Y=0  (expected=0)
+# 18000 | F=01  A=f  B=0  ->  Y=f  (expected=f)
+# 19000 | F=10  A=f  B=0  ->  Y=f  (expected=f)
+# 20000 | F=11  A=f  B=0  ->  Y=0  (expected=0)
+# 21000 | F=00  A=f  B=f  ->  Y=f  (expected=f)
+# 22000 | F=01  A=f  B=f  ->  Y=f  (expected=f)
+# 23000 | F=10  A=f  B=f  ->  Y=0  (expected=0)
+# 24000 | F=11  A=f  B=f  ->  Y=0  (expected=0)
+# 25000 | F=10  A=8  B=6  ->  Y=e  (expected=e)
+# 26000 | F=10  A=6  B=6  ->  Y=0  (expected=0)
+# 27000 | F=11  A=2  B=e  ->  Y=1  (expected=1)
+# 28000 | F=00  A=a  B=a  ->  Y=a  (expected=a)
+# 29000 | F=01  A=f  B=6  ->  Y=f  (expected=f)
+# 30000 | F=01  A=4  B=e  ->  Y=e  (expected=e)
+# 31000 | F=11  A=b  B=5  ->  Y=0  (expected=0)
+# 32000 | F=01  A=0  B=5  ->  Y=5  (expected=5)
+# 33000 | F=01  A=5  B=9  ->  Y=d  (expected=d)
+# 34000 | F=11  A=a  B=8  ->  Y=5  (expected=5)
+# 35000 | F=01  A=6  B=9  ->  Y=f  (expected=f)
+# 36000 | F=10  A=0  B=0  ->  Y=0  (expected=0)
+# 37000 | F=00  A=4  B=e  ->  Y=4  (expected=4)
+# 38000 | F=11  A=7  B=5  ->  Y=8  (expected=8)
+# 39000 | F=10  A=8  B=1  ->  Y=9  (expected=9)
+# 40000 | F=11  A=3  B=4  ->  Y=8  (expected=8)
+# 41000 | F=10  A=a  B=6  ->  Y=c  (expected=c)
+# 42000 | F=11  A=5  B=a  ->  Y=0  (expected=0)
+# 43000 | F=01  A=f  B=4  ->  Y=f  (expected=f)
+# 44000 | F=11  A=b  B=7  ->  Y=0  (expected=0)
+# Q4 logic unit: all tests passed.
+# ** Note: $finish    : C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/tb_logic.sv(66)
+#    Time: 44 ns  Iteration: 0  Instance: /tb_q4_logic
+# 1
+# Break in Module tb_q4_logic at C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/tb_logic.sv line 66
 quit -sim
-# End time: 09:24:27 on Sep 01,2025, Elapsed time: 0:01:44
-# Errors: 0, Warnings: 1
-# Compile of multi_digit_display.sv was successful with warnings.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of mult_8.sv was successful.
-# Compile of long_mult_8.sv was successful.
-# Compile of long_mult_4.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# 12 compiles, 0 failed with no errors.
-vsim work.tb_long_mult_8
-# vsim work.tb_long_mult_8 
-# Start time: 09:26:31 on Sep 01,2025
-# Loading sv_std.std
-# Loading work.tb_long_mult_8
-# Loading work.long_mult_8
-add wave -position end  sim:/tb_long_mult_8/a
-add wave -position end  sim:/tb_long_mult_8/b
-add wave -position end  sim:/tb_long_mult_8/c
-run
-#    Time |   a   |   b   |     c
-# ----------------------------------
-#     10 |   5  |  10  |    50
-run
-#     20 |  15  |   3  |    45
-run
-#     30 | 255  |   2  |   510
-run
-#     40 | 100  | 200  | 20000
-# ** Note: $stop    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv(32)
-#    Time: 40 ps  Iteration: 0  Instance: /tb_long_mult_8
-# Break in Module tb_long_mult_8 at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv line 32
-quit -sim
-# End time: 09:27:11 on Sep 01,2025, Elapsed time: 0:00:40
-# Errors: 0, Warnings: 2
+# End time: 10:12:56 on Sep 01,2025, Elapsed time: 0:21:03
+# Errors: 0, Warnings: 8
