@@ -1,5 +1,5 @@
 # Loading project Assignment_1
-# Compile of multi_digit_display.sv was successful with warnings.
+# Compile of multi_digit_display.sv was successful.
 # Compile of seven_segment_decoder.sv was successful.
 # Compile of tb_multi_digit_display.sv was successful.
 # Compile of tb_seven_segment_decoder.sv was successful.
@@ -7,113 +7,10 @@
 # Compile of multi_segment_multiplication.sv was successful.
 # Compile of tb_mult_4.sv was successful.
 # Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of mult_8.sv was successful.
-# Compile of long_mult_8.sv was successful.
 # Compile of long_mult_4.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# 12 compiles, 0 failed with no errors.
-# Compile of multi_digit_display.sv was successful with warnings.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of mult_8.sv was successful.
 # Compile of long_mult_8.sv was successful.
-# Compile of long_mult_4.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# 12 compiles, 0 failed with no errors.
-# Load canceled
-# Compile of multi_digit_display.sv was successful with warnings.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
+# Compile of long_mult_8_display.sv was successful.
 # Compile of mult_8.sv was successful.
-# Compile of long_mult_8.sv was successful.
-# Compile of long_mult_4.sv was successful.
 # Compile of tb_long_mult_8.sv was successful.
-# 12 compiles, 0 failed with no errors.
-# Load canceled
-# Compile of multi_digit_display.sv was successful with warnings.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of mult_8.sv was successful.
-# Compile of long_mult_8.sv was successful.
-# Compile of long_mult_4.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# 12 compiles, 0 failed with no errors.
-vsim work.tb_long_mult_8
-# vsim work.tb_long_mult_8 
-# Start time: 09:22:43 on Sep 01,2025
-# Loading sv_std.std
-# Loading work.tb_long_mult_8
-# Loading work.long_mult_8
-add wave -position end  sim:/tb_long_mult_8/a
-add wave -position end  sim:/tb_long_mult_8/b
-add wave -position end  sim:/tb_long_mult_8/c
-run
-# ** Note: $stop    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv(28)
-#    Time: 40 ps  Iteration: 0  Instance: /tb_long_mult_8
-# Break in Module tb_long_mult_8 at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv line 28
-# WARNING: No extended dataflow license exists
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-run
-run
-run
-# ** Note: $stop    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv(28)
-#    Time: 40 ps  Iteration: 0  Instance: /tb_long_mult_8
-# Break in Module tb_long_mult_8 at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv line 28
-quit -sim
-# End time: 09:24:27 on Sep 01,2025, Elapsed time: 0:01:44
-# Errors: 0, Warnings: 1
-# Compile of multi_digit_display.sv was successful with warnings.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of mult_8.sv was successful.
-# Compile of long_mult_8.sv was successful.
-# Compile of long_mult_4.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# 12 compiles, 0 failed with no errors.
-vsim work.tb_long_mult_8
-# vsim work.tb_long_mult_8 
-# Start time: 09:26:31 on Sep 01,2025
-# Loading sv_std.std
-# Loading work.tb_long_mult_8
-# Loading work.long_mult_8
-add wave -position end  sim:/tb_long_mult_8/a
-add wave -position end  sim:/tb_long_mult_8/b
-add wave -position end  sim:/tb_long_mult_8/c
-run
-#    Time |   a   |   b   |     c
-# ----------------------------------
-#     10 |   5  |  10  |    50
-run
-#     20 |  15  |   3  |    45
-run
-#     30 | 255  |   2  |   510
-run
-#     40 | 100  | 200  | 20000
-# ** Note: $stop    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv(32)
-#    Time: 40 ps  Iteration: 0  Instance: /tb_long_mult_8
-# Break in Module tb_long_mult_8 at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/tb_long_mult_8.sv line 32
-quit -sim
-# End time: 09:27:11 on Sep 01,2025, Elapsed time: 0:00:40
-# Errors: 0, Warnings: 2
+# Compile of tb_long_mult_8_display.sv was successful.
+# 14 compiles, 0 failed with no errors.
