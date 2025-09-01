@@ -1,5 +1,5 @@
 Analysis & Synthesis report for logic_unit
-Mon Sep 01 10:42:19 2025
+Mon Sep  1 11:49:33 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Sep 01 10:42:19 2025       ;
+; Analysis & Synthesis Status     ; Successful - Mon Sep  1 11:49:33 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; logic_unit                                  ;
 ; Top-level Entity Name           ; logic_unit                                  ;
@@ -157,8 +157,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 22          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -168,13 +168,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+-----------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path              ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                              ; Library ;
-+-----------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
-; ../../modelsim_projects/Assignment_1/logic.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/logic.sv ;         ;
-+-----------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                   ;
++-------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                            ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                    ; Library ;
++-------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; ../../modelsim_projects/Assignment_1/Q4_Logic_Unit/logic.sv ; yes             ; User SystemVerilog HDL File  ; /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q4_Logic_Unit/logic.sv ;         ;
++-------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -278,12 +278,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 01 10:42:12 2025
+    Info: Processing started: Mon Sep  1 11:49:26 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off logic_unit -c logic_unit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_1/logic.sv
-    Info (12023): Found entity 1: logic_unit File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/logic.sv Line: 20
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q4_Logic_Unit/logic.sv
+    Info (12023): Found entity 1: logic_unit File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q4_Logic_Unit/logic.sv Line: 20
 Info (12127): Elaborating entity "logic_unit" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -293,9 +293,9 @@ Info (21057): Implemented 26 device resources after synthesis - the final resour
     Info (21059): Implemented 12 output pins
     Info (21061): Implemented 4 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4842 megabytes
-    Info: Processing ended: Mon Sep 01 10:42:19 2025
+    Info: Peak virtual memory: 453 megabytes
+    Info: Processing ended: Mon Sep  1 11:49:33 2025
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:18
 
 

@@ -1,5 +1,5 @@
 Fitter report for long_mult_8_display
-Mon Sep  1 11:23:54 2025
+Mon Sep  1 12:03:29 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Mon Sep  1 11:23:54 2025       ;
+; Fitter Status                   ; Successful - Mon Sep  1 12:03:29 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; long_mult_8_display                         ;
 ; Top-level Entity Name           ; long_mult_8_display                         ;
@@ -1624,10 +1624,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/quartus_projects/Assignment_1/mult_8_display/output_files/long_mult_8_display.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1665 megabytes
-    Info: Processing ended: Mon Sep  1 11:23:54 2025
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 1670 megabytes
+    Info: Processing ended: Mon Sep  1 12:03:30 2025
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:34
 
 
 +----------------------------+
