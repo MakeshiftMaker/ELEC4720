@@ -1,0 +1,48 @@
+`timescale 1ns/1ps
+
+module alu_tb;
+
+    parameter N = 8; // small width for easier viewing
+    logic [N-1:0] A, B;
+    logic [3:0]   F;
+    logic [N-1:0] Y;
+    logic Cout, OV;
+
+    // Instantiate ALU
+    alu #(.N(N)) uut (
+        .A(A), .B(B), .F(F), .Y(Y), .Cout(Cout), .OV(OV)
+    );
+
+    initial begin
+        $display("Time | F | A | B | Y | Cout | OV");
+        $monitor("%4t | %b | %0d | %0d | %0d | %b | %b",
+                 $time, F, A, B, Y, Cout, OV);
+
+        // Test signed add
+        A = 8'd50;  B = 8'd10;  F = 4'b0000; #10;
+        A = 8'd100; B = 8'd100; F = 4'b0000; #10;
+
+        // Test unsigned add
+        A = 8'hFF; B = 8'd1; F = 4'b0001; #10;
+
+        // Test signed sub
+        A = -8'd20; B = 8'd5; F = 4'b0010; #10;
+
+        // Test unsigned sub
+        A = 8'd5; B = 8'd10; F = 4'b0011; #10;
+
+        // Logic ops
+        A = 8'hAA; B = 8'h55; F = 4'b0100; #10; // AND
+        F = 4'b0101; #10; // OR
+        F = 4'b0110; #10; // XOR
+        F = 4'b0111; #10; // NOR
+
+        // Signed less than
+        A = -8'd5; B = 8'd3; F = 4'b1010; #10;
+
+        // Unsigned less than
+        A = 8'd5; B = 8'd250; F = 4'b1011; #10;
+
+        $finish;
+    end
+endmodule

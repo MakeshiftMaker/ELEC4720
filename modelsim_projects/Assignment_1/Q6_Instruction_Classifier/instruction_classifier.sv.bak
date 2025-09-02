@@ -1,7 +1,10 @@
 module instruction_classifier (
     input  logic [5:0] opcode,
+    output logic [5:0] opcode_out,
     output logic R, B1, J, B2, I, F, M
 );
+
+    assign opcode_out opcode; //we need an output to drive the leds'
 
     // R-type: opcode == 000000
     assign R  = (opcode == 6'b000000);
@@ -13,7 +16,7 @@ module instruction_classifier (
     assign J  = (opcode[5:1] == 5'b00001);
 
     // B2: opcode[5:3] == 0001xx
-    assign B2 = (opcode[5:3] == 4'b0001);
+    assign B2 = (opcode[5:2] == 4'b0001);
 
     // I: opcode[5:3] == 001xxx
     assign I  = (opcode[5:3] == 3'b001);

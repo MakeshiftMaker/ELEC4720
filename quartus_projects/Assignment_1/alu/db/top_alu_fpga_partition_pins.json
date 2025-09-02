@@ -1,0 +1,193 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_b[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_y[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_y[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_y[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_y[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Cout",
+					"strict" : false
+				},
+				{
+					"name" : "OV",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "F[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "F[2]",
+					"strict" : false
+				},
+				{
+					"name" : "F[3]",
+					"strict" : false
+				},
+				{
+					"name" : "F[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

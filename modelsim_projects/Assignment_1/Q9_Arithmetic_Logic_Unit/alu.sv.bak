@@ -1,0 +1,52 @@
+module alu #(
+    parameter N = 32
+)(
+    input  logic [N-1:0] A, B,
+    input  logic [3:0]   F,
+    output logic [N-1:0] Y,
+    output logic Cout,    // carry out
+    output logic OV       // overflow flag
+);
+
+    logic [N:0] tmp; // extra bit for carry
+    logic signed [N-1:0] As, Bs;  // signed versions
+    assign As = A;
+    assign Bs = B;
+
+    //always_comb begin
+    case (F)
+        4'b0000: begin // signed add
+            tmp = As + Bs;
+            Y   = tmp[N-1:0];
+            Cout = tmp[N];
+            OV   = (As[N-1] == Bs[N-1]) && (Y[N-1] != As[N-1]);
+        end
+        4'b0001: begin // unsigned add
+            tmp = A + B;
+            Y   = tmp[N-1:0];
+            Cout = tmp[N];
+            OV   = 1'b0;
+        end
+        4'b0010: begin // signed sub
+            tmp = As - Bs;
+            Y   = tmp[N-1:0];
+            Cout = tmp[N];
+            OV   = (As[N-1] != Bs[N-1]) && (Y[N-1] != As[N-1]);
+        end
+        4'b0011: begin // unsigned sub
+            tmp = A - B;
+            Y   = tmp[N-1:0];
+            Cout = tmp[N];
+            OV   = 1'b0;
+        end
+        4'b0100: begin Y = A & B; Cout = 0; OV = 0; end
+        4'b0101: begin Y = A | B; Cout = 0; OV = 0; end
+        4'b0110: begin Y = A ^ B; Cout = 0; OV = 0; end
+        4'b0111: begin Y = ~(A | B); Cout = 0; OV = 0; end
+        4'b1010: begin Y = (As < Bs) ? 1 : 0; Cout = 0; OV = 0; end
+        4'b1011: begin Y = (A < B) ? 1 : 0; Cout = 0; OV = 0; end
+        default: begin Y = '0; Cout = 0; OV = 0; end
+    endcase
+//end
+
+endmodule

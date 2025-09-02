@@ -19,6 +19,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	mult_4_display
 
+} {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q9_Arithmetic_Logic_Unit/tb_alu.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q9_Arithmetic_Logic_Unit/tb_alu.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_alu
+
+Top level modules:
+	tb_alu
+
 } {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_seven_segment_decoder.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_seven_segment_decoder.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tb_seven_segment_decoder
@@ -110,6 +117,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	mult_4
 
+} {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q9_Arithmetic_Logic_Unit/alu.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q9_Arithmetic_Logic_Unit/alu.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu
+
+Top level modules:
+	alu
+
 } {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/seven_segment_decoder.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/seven_segment_decoder.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module seven_segment_decoder
@@ -123,5 +137,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	tb_mult4_display
+
+} {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q6_Instruction_Classifier/instruction_classifier.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q6_Instruction_Classifier/instruction_classifier.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module instruction_classifier
+
+Top level modules:
+	instruction_classifier
 
 } {} {}}

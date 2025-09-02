@@ -1,45 +1,17 @@
 # Loading project Assignment_1
-# Compile of multi_digit_display.sv was successful.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of long_mult_4.sv was successful.
-# Compile of long_mult_8.sv was successful.
-# Compile of long_mult_8_display.sv was successful.
-# Compile of mult_8.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# Compile of tb_long_mult_8_display.sv was successful.
-# Compile of logic.sv was successful.
-# Compile of tb_logic.sv was successful.
-# Compile of mult_8_display.sv was successful.
-# Compile of instruction_classifier.sv was successful with warnings.
-# Compile of tb_instruction_classifier.sv was successful.
-# 19 compiles, 0 failed with no errors.
-# Load canceled
-# Compile of multi_digit_display.sv was successful.
-# Compile of seven_segment_decoder.sv was successful.
-# Compile of tb_multi_digit_display.sv was successful.
-# Compile of tb_seven_segment_decoder.sv was successful.
-# Compile of mult_4.sv was successful.
-# Compile of multi_segment_multiplication.sv was successful.
-# Compile of tb_mult_4.sv was successful.
-# Compile of tb_multi_segment_multiplication.sv was successful.
-# Compile of long_mult_4.sv was successful.
-# Compile of long_mult_8.sv was successful.
-# Compile of long_mult_8_display.sv was successful.
-# Compile of mult_8.sv was successful.
-# Compile of tb_long_mult_8.sv was successful.
-# Compile of tb_long_mult_8_display.sv was successful.
-# Compile of logic.sv was successful.
-# Compile of tb_logic.sv was successful.
-# Compile of mult_8_display.sv was successful.
-# Compile of instruction_classifier.sv was successful with warnings.
-# Compile of tb_instruction_classifier.sv was successful.
-# 19 compiles, 0 failed with no errors.
+# Compile of alu.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of top_alu_fpga.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of top_alu_fpga.sv failed with 3 errors.
+# Compile of top_alu_fpga.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of top_alu_fpga.sv was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of alu.sv was successful.
+# Compile of alu.sv failed with 2 errors.
 # Compile of multi_digit_display.sv was successful.
 # Compile of seven_segment_decoder.sv was successful.
 # Compile of tb_multi_digit_display.sv was successful.
@@ -59,98 +31,38 @@
 # Compile of mult_8_display.sv was successful.
 # Compile of instruction_classifier.sv was successful.
 # Compile of tb_instruction_classifier.sv was successful.
-# 19 compiles, 0 failed with no errors.
-vsim work.tb_instruction_classifier
-# vsim work.tb_instruction_classifier 
-# Start time: 12:54:10 on Sep 01,2025
-# Loading sv_std.std
-# Loading work.tb_instruction_classifier
-# Loading work.instruction_classifier
-add wave -position end  sim:/tb_instruction_classifier/opcode
-add wave -position end  sim:/tb_instruction_classifier/R
-add wave -position end  sim:/tb_instruction_classifier/B1
-add wave -position end  sim:/tb_instruction_classifier/J
-add wave -position end  sim:/tb_instruction_classifier/B2
-add wave -position end  sim:/tb_instruction_classifier/I
-add wave -position end  sim:/tb_instruction_classifier/F
-add wave -position end  sim:/tb_instruction_classifier/M
-run
-# Opcode | R B1 J B2 I F M
-# 000000 | 1 0 0 0 0 0 0
-# 000001 | 0 1 0 0 0 0 0
-# 000010 | 0 0 1 0 0 0 0
-# 000011 | 0 0 1 0 0 0 0
-# 000100 | 0 0 0 0 0 0 0
-# 000101 | 0 0 0 0 0 0 0
-run
-# 000110 | 0 0 0 0 0 0 0
-# 000111 | 0 0 0 0 0 0 0
-# 001000 | 0 0 0 1 1 0 0
-# 001001 | 0 0 0 1 1 0 0
-# 001010 | 0 0 0 1 1 0 0
-# 001011 | 0 0 0 1 1 0 0
-run
-# 001100 | 0 0 0 1 1 0 0
-# 001101 | 0 0 0 1 1 0 0
-# 001110 | 0 0 0 1 1 0 0
-# 001111 | 0 0 0 1 1 0 0
-# 010000 | 0 0 0 0 0 1 0
-# 010001 | 0 0 0 0 0 1 0
-run
-# 010010 | 0 0 0 0 0 1 0
-# 010011 | 0 0 0 0 0 1 0
-# 010100 | 0 0 0 0 0 1 0
-# 010101 | 0 0 0 0 0 1 0
-# 010110 | 0 0 0 0 0 1 0
-# 010111 | 0 0 0 0 0 1 0
-run
-# 011000 | 0 0 0 0 0 1 0
-# 011001 | 0 0 0 0 0 1 0
-# 011010 | 0 0 0 0 0 1 0
-# 011011 | 0 0 0 0 0 1 0
-# 011100 | 0 0 0 0 0 1 0
-# 011101 | 0 0 0 0 0 1 0
-run
-# 011110 | 0 0 0 0 0 1 0
-# 011111 | 0 0 0 0 0 1 0
-# 100000 | 0 0 0 0 0 0 1
-# 100001 | 0 0 0 0 0 0 1
-# 100010 | 0 0 0 0 0 0 1
-# 100011 | 0 0 0 0 0 0 1
-run
-# 100100 | 0 0 0 0 0 0 1
-# 100101 | 0 0 0 0 0 0 1
-# 100110 | 0 0 0 0 0 0 1
-# 100111 | 0 0 0 0 0 0 1
-# 101000 | 0 0 0 0 0 0 1
-# 101001 | 0 0 0 0 0 0 1
-run
-# 101010 | 0 0 0 0 0 0 1
-# 101011 | 0 0 0 0 0 0 1
-# 101100 | 0 0 0 0 0 0 1
-# 101101 | 0 0 0 0 0 0 1
-# 101110 | 0 0 0 0 0 0 1
-# 101111 | 0 0 0 0 0 0 1
-run
-# 110000 | 0 0 0 0 0 0 1
-# 110001 | 0 0 0 0 0 0 1
-# 110010 | 0 0 0 0 0 0 1
-# 110011 | 0 0 0 0 0 0 1
-# 110100 | 0 0 0 0 0 0 1
-# 110101 | 0 0 0 0 0 0 1
-run
-# 110110 | 0 0 0 0 0 0 1
-# 110111 | 0 0 0 0 0 0 1
-# 111000 | 0 0 0 0 0 0 1
-# 111001 | 0 0 0 0 0 0 1
-# 111010 | 0 0 0 0 0 0 1
-# 111011 | 0 0 0 0 0 0 1
-run
-# 111100 | 0 0 0 0 0 0 1
-# 111101 | 0 0 0 0 0 0 1
-# 111110 | 0 0 0 0 0 0 1
-# 111111 | 0 0 0 0 0 0 1
-# ** Note: $finish    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q6_Instruction_Classifier/tb_instruction_classifier.sv(16)
-#    Time: 64 ps  Iteration: 0  Instance: /tb_instruction_classifier
-# 1
-# Break in Module tb_instruction_classifier at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q6_Instruction_Classifier/tb_instruction_classifier.sv line 16
+# Compile of alu.sv failed with 2 errors.
+# Compile of tb_alu.sv was successful.
+# Compile of top_alu_fpga.sv was successful.
+# 22 compiles, 1 failed with 2 errors.
+# Compile of alu.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of top_alu_fpga.sv was successful.
+# Compile of top_alu_fpga.sv failed with 1 errors.
+# Compile of top_alu_fpga.sv failed with 1 errors.
+# Compile of top_alu_fpga.sv failed with 1 errors.
+# Compile of multi_digit_display.sv was successful.
+# Compile of seven_segment_decoder.sv was successful.
+# Compile of tb_multi_digit_display.sv was successful.
+# Compile of tb_seven_segment_decoder.sv was successful.
+# Compile of mult_4.sv was successful.
+# Compile of multi_segment_multiplication.sv was successful.
+# Compile of tb_mult_4.sv was successful.
+# Compile of tb_multi_segment_multiplication.sv was successful.
+# Compile of long_mult_4.sv was successful.
+# Compile of long_mult_8.sv was successful.
+# Compile of long_mult_8_display.sv was successful.
+# Compile of mult_8.sv was successful.
+# Compile of tb_long_mult_8.sv was successful.
+# Compile of tb_long_mult_8_display.sv was successful.
+# Compile of logic.sv was successful.
+# Compile of tb_logic.sv was successful.
+# Compile of mult_8_display.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of top_alu_fpga.sv was successful.
+# 22 compiles, 0 failed with no errors.
+# Compile of top_alu_fpga.sv was successful.
+# Compile of top_alu_fpga.sv was successful.

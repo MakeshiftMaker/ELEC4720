@@ -1,0 +1,240 @@
+|top_alu_fpga
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+F[0] => F[0].IN1
+F[1] => F[1].IN1
+F[2] => F[2].IN1
+F[3] => F[3].IN1
+Y[0] <= alu:alu_inst.Y
+Y[1] <= alu:alu_inst.Y
+Y[2] <= alu:alu_inst.Y
+Y[3] <= alu:alu_inst.Y
+seg_a[0] <= multi_digit_display:disp_a.seg[0][0]
+seg_a[1] <= multi_digit_display:disp_a.seg[0][1]
+seg_a[2] <= multi_digit_display:disp_a.seg[0][2]
+seg_a[3] <= multi_digit_display:disp_a.seg[0][3]
+seg_a[4] <= multi_digit_display:disp_a.seg[0][4]
+seg_a[5] <= multi_digit_display:disp_a.seg[0][5]
+seg_a[6] <= multi_digit_display:disp_a.seg[0][6]
+seg_b[0] <= multi_digit_display:disp_b.seg[0][0]
+seg_b[1] <= multi_digit_display:disp_b.seg[0][1]
+seg_b[2] <= multi_digit_display:disp_b.seg[0][2]
+seg_b[3] <= multi_digit_display:disp_b.seg[0][3]
+seg_b[4] <= multi_digit_display:disp_b.seg[0][4]
+seg_b[5] <= multi_digit_display:disp_b.seg[0][5]
+seg_b[6] <= multi_digit_display:disp_b.seg[0][6]
+seg_y[0] <= multi_digit_display:disp_y.seg[0][0]
+seg_y[1] <= multi_digit_display:disp_y.seg[0][1]
+seg_y[2] <= multi_digit_display:disp_y.seg[0][2]
+seg_y[3] <= multi_digit_display:disp_y.seg[0][3]
+seg_y[4] <= multi_digit_display:disp_y.seg[0][4]
+seg_y[5] <= multi_digit_display:disp_y.seg[0][5]
+seg_y[6] <= multi_digit_display:disp_y.seg[0][6]
+Cout <= alu:alu_inst.Cout
+OV <= alu:alu_inst.OV
+A_out[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+A_out[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+A_out[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+A_out[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+B_out[0] <= B[0].DB_MAX_OUTPUT_PORT_TYPE
+B_out[1] <= B[1].DB_MAX_OUTPUT_PORT_TYPE
+B_out[2] <= B[2].DB_MAX_OUTPUT_PORT_TYPE
+B_out[3] <= B[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_alu_fpga|alu:alu_inst
+A[0] => Add1.IN2
+A[0] => Add3.IN5
+A[0] => Y.IN0
+A[0] => Y.IN0
+A[0] => Y.IN0
+A[0] => LessThan1.IN2
+A[0] => Add0.IN2
+A[0] => Add2.IN6
+A[0] => LessThan0.IN2
+A[1] => Add1.IN1
+A[1] => Add3.IN4
+A[1] => Y.IN0
+A[1] => Y.IN0
+A[1] => Y.IN0
+A[1] => LessThan1.IN1
+A[1] => Add0.IN1
+A[1] => Add2.IN5
+A[1] => LessThan0.IN1
+A[2] => Add0.IN5
+A[2] => Add0.IN6
+A[2] => OV.IN1
+A[2] => Add2.IN7
+A[2] => Add2.IN8
+A[2] => OV.IN1
+A[2] => LessThan0.IN5
+A[2] => Add1.IN5
+A[2] => Add3.IN6
+A[2] => Y.IN0
+A[2] => Y.IN0
+A[2] => Y.IN0
+A[2] => LessThan1.IN5
+B[0] => Add1.IN4
+B[0] => Y.IN1
+B[0] => Y.IN1
+B[0] => Y.IN1
+B[0] => LessThan1.IN4
+B[0] => Add0.IN4
+B[0] => LessThan0.IN4
+B[0] => Add3.IN3
+B[0] => Add2.IN4
+B[1] => Add1.IN3
+B[1] => Y.IN1
+B[1] => Y.IN1
+B[1] => Y.IN1
+B[1] => LessThan1.IN3
+B[1] => Add0.IN3
+B[1] => LessThan0.IN3
+B[1] => Add3.IN2
+B[1] => Add2.IN3
+B[2] => Add0.IN7
+B[2] => Add0.IN8
+B[2] => LessThan0.IN6
+B[2] => Add1.IN6
+B[2] => Y.IN1
+B[2] => Y.IN1
+B[2] => Y.IN1
+B[2] => LessThan1.IN6
+B[2] => Add3.IN1
+B[2] => Add2.IN1
+B[2] => Add2.IN2
+F[0] => Mux0.IN19
+F[0] => Mux1.IN19
+F[0] => Mux2.IN19
+F[0] => Mux3.IN19
+F[0] => Decoder0.IN3
+F[1] => Mux0.IN18
+F[1] => Mux1.IN18
+F[1] => Mux2.IN18
+F[1] => Mux3.IN18
+F[1] => Decoder0.IN2
+F[2] => Mux0.IN17
+F[2] => Mux1.IN17
+F[2] => Mux2.IN17
+F[2] => Mux3.IN17
+F[2] => Decoder0.IN1
+F[3] => Mux0.IN16
+F[3] => Mux1.IN16
+F[3] => Mux2.IN16
+F[3] => Mux3.IN16
+F[3] => Decoder0.IN0
+Y[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+OV <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_alu_fpga|multi_digit_display:disp_a
+number[0] => number[0].IN1
+number[1] => number[1].IN1
+number[2] => number[2].IN1
+number[3] => number[3].IN1
+seg[0][0] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][1] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][2] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][3] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][4] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][5] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][6] <= seven_segment_decoder:digits[0].dec.seg
+
+
+|top_alu_fpga|multi_digit_display:disp_a|seven_segment_decoder:digits[0].dec
+D[0] => Decoder0.IN3
+D[0] => Equal0.IN3
+D[1] => Decoder0.IN2
+D[1] => Equal0.IN2
+D[2] => Decoder0.IN1
+D[2] => Equal0.IN1
+D[3] => Decoder0.IN0
+D[3] => Equal0.IN0
+RBI => always0.IN1
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+RBO <= always0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_alu_fpga|multi_digit_display:disp_b
+number[0] => number[0].IN1
+number[1] => number[1].IN1
+number[2] => number[2].IN1
+number[3] => number[3].IN1
+seg[0][0] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][1] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][2] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][3] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][4] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][5] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][6] <= seven_segment_decoder:digits[0].dec.seg
+
+
+|top_alu_fpga|multi_digit_display:disp_b|seven_segment_decoder:digits[0].dec
+D[0] => Decoder0.IN3
+D[0] => Equal0.IN3
+D[1] => Decoder0.IN2
+D[1] => Equal0.IN2
+D[2] => Decoder0.IN1
+D[2] => Equal0.IN1
+D[3] => Decoder0.IN0
+D[3] => Equal0.IN0
+RBI => always0.IN1
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+RBO <= always0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_alu_fpga|multi_digit_display:disp_y
+number[0] => number[0].IN1
+number[1] => number[1].IN1
+number[2] => number[2].IN1
+number[3] => number[3].IN1
+seg[0][0] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][1] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][2] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][3] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][4] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][5] <= seven_segment_decoder:digits[0].dec.seg
+seg[0][6] <= seven_segment_decoder:digits[0].dec.seg
+
+
+|top_alu_fpga|multi_digit_display:disp_y|seven_segment_decoder:digits[0].dec
+D[0] => Decoder0.IN3
+D[0] => Equal0.IN3
+D[1] => Decoder0.IN2
+D[1] => Equal0.IN2
+D[2] => Decoder0.IN1
+D[2] => Equal0.IN1
+D[3] => Decoder0.IN0
+D[3] => Equal0.IN0
+RBI => always0.IN1
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+RBO <= always0.DB_MAX_OUTPUT_PORT_TYPE
+
+
