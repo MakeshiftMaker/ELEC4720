@@ -1,0 +1,143 @@
+|add_sub
+A[0] => digits_packed[0].IN1
+A[1] => digits_packed[1].IN1
+A[2] => digits_packed[2].IN1
+A[3] => A[3].IN1
+B[0] => comb.DATAA
+B[0] => multi_digit_display_local:u_disp.number[4]
+B[0] => comb.DATAB
+B[1] => comb.DATAA
+B[1] => multi_digit_display_local:u_disp.number[5]
+B[1] => comb.DATAB
+B[2] => comb.DATAA
+B[2] => multi_digit_display_local:u_disp.number[6]
+B[2] => comb.DATAB
+B[3] => comb.DATAA
+B[3] => OV.IN0
+B[3] => multi_digit_display_local:u_disp.number[7]
+B[3] => comb.DATAB
+s => Cin.IN1
+Y[0] <= adder:u_add.S
+Y[1] <= adder:u_add.S
+Y[2] <= adder:u_add.S
+Y[3] <= adder:u_add.S
+Cout <= adder:u_add.Cout
+OV <= OV.DB_MAX_OUTPUT_PORT_TYPE
+seg_A[0] <= multi_digit_display_local:u_disp.seg[0][0]
+seg_A[1] <= multi_digit_display_local:u_disp.seg[0][1]
+seg_A[2] <= multi_digit_display_local:u_disp.seg[0][2]
+seg_A[3] <= multi_digit_display_local:u_disp.seg[0][3]
+seg_A[4] <= multi_digit_display_local:u_disp.seg[0][4]
+seg_A[5] <= multi_digit_display_local:u_disp.seg[0][5]
+seg_A[6] <= multi_digit_display_local:u_disp.seg[0][6]
+seg_B[0] <= multi_digit_display_local:u_disp.seg[1][0]
+seg_B[1] <= multi_digit_display_local:u_disp.seg[1][1]
+seg_B[2] <= multi_digit_display_local:u_disp.seg[1][2]
+seg_B[3] <= multi_digit_display_local:u_disp.seg[1][3]
+seg_B[4] <= multi_digit_display_local:u_disp.seg[1][4]
+seg_B[5] <= multi_digit_display_local:u_disp.seg[1][5]
+seg_B[6] <= multi_digit_display_local:u_disp.seg[1][6]
+seg_Y[0] <= multi_digit_display_local:u_disp.seg[2][0]
+seg_Y[1] <= multi_digit_display_local:u_disp.seg[2][1]
+seg_Y[2] <= multi_digit_display_local:u_disp.seg[2][2]
+seg_Y[3] <= multi_digit_display_local:u_disp.seg[2][3]
+seg_Y[4] <= multi_digit_display_local:u_disp.seg[2][4]
+seg_Y[5] <= multi_digit_display_local:u_disp.seg[2][5]
+seg_Y[6] <= multi_digit_display_local:u_disp.seg[2][6]
+
+
+|add_sub|adder:u_add
+A[0] => _.DATAD
+A[1] => _.DATAD
+A[2] => _.DATAD
+A[3] => _.DATAD
+B[0] => _.DATAC
+B[1] => _.DATAC
+B[2] => _.DATAC
+B[3] => _.DATAC
+Cin => _.DATAB
+S[0] <= _.SUM_OUT
+S[1] <= _.SUM_OUT
+S[2] <= _.SUM_OUT
+S[3] <= _.SUM_OUT
+Cout <= _.SUM_OUT
+
+
+|add_sub|multi_digit_display_local:u_disp
+number[0] => number[0].IN1
+number[1] => number[1].IN1
+number[2] => number[2].IN1
+number[3] => number[3].IN1
+number[4] => number[4].IN1
+number[5] => number[5].IN1
+number[6] => number[6].IN1
+number[7] => number[7].IN1
+number[8] => number[8].IN1
+number[9] => number[9].IN1
+number[10] => number[10].IN1
+number[11] => number[11].IN1
+seg[0][0] <= seven_segment_decoder_local:gen_digits[0].u_dec.seg
+seg[0][1] <= seven_segment_decoder_local:gen_digits[0].u_dec.seg
+seg[0][2] <= seven_segment_decoder_local:gen_digits[0].u_dec.seg
+seg[0][3] <= seven_segment_decoder_local:gen_digits[0].u_dec.seg
+seg[0][4] <= seven_segment_decoder_local:gen_digits[0].u_dec.seg
+seg[0][5] <= seven_segment_decoder_local:gen_digits[0].u_dec.seg
+seg[0][6] <= seven_segment_decoder_local:gen_digits[0].u_dec.seg
+seg[1][0] <= seven_segment_decoder_local:gen_digits[1].u_dec.seg
+seg[1][1] <= seven_segment_decoder_local:gen_digits[1].u_dec.seg
+seg[1][2] <= seven_segment_decoder_local:gen_digits[1].u_dec.seg
+seg[1][3] <= seven_segment_decoder_local:gen_digits[1].u_dec.seg
+seg[1][4] <= seven_segment_decoder_local:gen_digits[1].u_dec.seg
+seg[1][5] <= seven_segment_decoder_local:gen_digits[1].u_dec.seg
+seg[1][6] <= seven_segment_decoder_local:gen_digits[1].u_dec.seg
+seg[2][0] <= seven_segment_decoder_local:gen_digits[2].u_dec.seg
+seg[2][1] <= seven_segment_decoder_local:gen_digits[2].u_dec.seg
+seg[2][2] <= seven_segment_decoder_local:gen_digits[2].u_dec.seg
+seg[2][3] <= seven_segment_decoder_local:gen_digits[2].u_dec.seg
+seg[2][4] <= seven_segment_decoder_local:gen_digits[2].u_dec.seg
+seg[2][5] <= seven_segment_decoder_local:gen_digits[2].u_dec.seg
+seg[2][6] <= seven_segment_decoder_local:gen_digits[2].u_dec.seg
+
+
+|add_sub|multi_digit_display_local:u_disp|seven_segment_decoder_local:gen_digits[0].u_dec
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|multi_digit_display_local:u_disp|seven_segment_decoder_local:gen_digits[1].u_dec
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|multi_digit_display_local:u_disp|seven_segment_decoder_local:gen_digits[2].u_dec
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
