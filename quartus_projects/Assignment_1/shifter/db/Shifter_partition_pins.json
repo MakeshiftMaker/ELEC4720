@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Y[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_C[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_C[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_C[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_C[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_C[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_C[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_F[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_F[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_F[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_C[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_C[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

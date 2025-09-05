@@ -89,6 +89,14 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	tb_long_mult_8_display
 
+} {} {}} C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/Shifter_sim.sv {1 {vlog -work work -sv -stats=none C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/Shifter_sim.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shifter
+-- Compiling module shifter_mips
+
+Top level modules:
+	shifter_mips
+
 } {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_mult_4.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_mult_4.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tb_mult4
@@ -123,6 +131,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	logic_unit
+
+} {} {}} C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv {1 {vlog -work work -sv -stats=none C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_Shifter
+
+Top level modules:
+	tb_Shifter
 
 } {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/mult_4.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/mult_4.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -172,5 +187,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	tb_mult4_display
+
+} {} {}} C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/shifter.sv {1 {vlog -work work -sv -stats=none C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/shifter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Q7_Shifter_top
+-- Compiling module seven_seg_hex
+
+Top level modules:
+	Q7_Shifter_top
 
 } {} {}}

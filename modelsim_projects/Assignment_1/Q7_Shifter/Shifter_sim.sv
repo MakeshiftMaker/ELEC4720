@@ -1,0 +1,76 @@
+// ============================================================================
+// Module  : shifter
+// Author  : 
+// Purpose : Parameterised shifter over W=2*N bits with 3 functions:
+//             F[1:0] = 00 -> logical left  (<<)
+//                        01 -> logical right (>>)
+//                        11 -> arithmetic right (>>>)
+// Notes   :
+//   * Purely combinational.
+//   * Amount width is N bits; data width is W=2*N (matches "2n-bit" style).
+//   * Arithmetic right uses $signed(A).
+// ============================================================================
+module shifter #(
+  parameter int N = 4,
+  parameter int W = 2*N
+)(
+  input  logic [W-1:0] A,
+  input  logic [N-1:0] Sh,
+  input  logic [1:0]   F,   // 00<<, 01>>, 11>>> (10 -> >>)
+  output logic [W-1:0] Y
+);
+  logic signed [W-1:0] As;
+
+  always_comb begin
+    As = A;
+    Y  = '0;                // <-- default each cycle (prevents X retention)
+    casez (F)               // <-- tolerate X/Z in F bits if they ever appear
+      2'b00: Y = A  << Sh;  // logical left
+      2'b01: Y = A  >> Sh;  // logical right
+      2'b11: Y = As >>> Sh; // arithmetic right
+      default: Y = A >> Sh; // 2'b10 or anything else -> logical right
+    endcase
+  end
+endmodule
+
+// ============================================================================
+// Module  : shifter_mips
+// Author  : 
+// Purpose : MIPS-style wrapper that selects shift amount from either:
+//            - immediate c[N-1:0], or
+//            - low N bits of b (variable shift),
+//           and maps a 3-bit F to the operation.
+// Interface:
+//   a[W-1:0]  : data to shift
+//   b[W-1:0]  : secondary operand (low N bits hold variable amount)
+//   c[N-1:0]  : immediate amount
+//   F[2:0]    : 000 a<<c, 001 a>>c, 011 a>>>c,
+//               100 a<<b[N-1:0], 101 a>>b[N-1:0], 111 a>>>b[N-1:0]
+//   y[W-1:0]  : result
+// ============================================================================
+module shifter_mips #(
+  parameter int N = 4,
+  parameter int W = 2*N
+)(
+  input  logic [W-1:0] a, b,
+  input  logic [N-1:0] c,
+  input  logic [2:0]   F,
+  output logic [W-1:0] y
+);
+  logic [N-1:0] amt;
+  logic [1:0]   f2;
+
+  always_comb begin                 // <-- avoids any init-at-decl weirdness
+    amt = F[2] ? b[N-1:0] : c;
+    f2  = F[1:0];
+  end
+
+  shifter #(.N(N), .W(W)) u_sh (
+    .A (a),
+    .Sh(amt),
+    .F (f2),
+    .Y (y)
+  );
+endmodule
+
+

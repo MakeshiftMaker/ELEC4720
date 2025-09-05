@@ -1,0 +1,97 @@
+// ============================================================================
+// Q7 Board Top (W=4, N=2)
+//  - a comes from 4 buttons (BTN_A[3:0])
+//  - F comes from 3 switches (SW_F[2:0])
+//  - b and c come from 2 switches each (SW_B[1:0], SW_C[1:0])
+//  - y goes to 4 LEDs (LED_Y[3:0])
+//  - b and c are each shown on a seven-seg (HEX_B, HEX_C)
+//  - No clock needed (purely combinational shifter)
+// ============================================================================
+
+module Q7_Shifter #(
+  parameter int N = 2,              // shift-amount width
+  parameter int W = 2*N,            // data width (W=4 when N=2)
+  parameter bit BTN_ACTIVE_LOW = 1  // set to 1 if your buttons are active-low
+)(
+  input  logic [3:0] BTN_A,         // 4 buttons for A[3:0]
+  input  logic [2:0] SW_F,          // 3 switches for F[2:0]
+  input  logic [1:0] SW_B,          // 2 switches for B[1:0]
+  input  logic [1:0] SW_C,          // 2 switches for C[1:0]
+  output logic [3:0] LED_Y,         // 4 LEDs for Y[3:0]
+  output logic [6:0] HEX_B,         // seven-seg for B (active-LOW)
+  output logic [6:0] HEX_C          // seven-seg for C (active-LOW)
+);
+
+  // -----------------------------
+  // Normalize input polarities
+  // -----------------------------
+  // Many boards have active-LOW buttons (e.g., DE-series KEY). Invert if so.
+  wire [3:0] a_raw = BTN_ACTIVE_LOW ? ~BTN_A : BTN_A;
+
+  // -----------------------------
+  // Internal buses sized from N/W
+  // -----------------------------
+  wire [W-1:0] a = a_raw[W-1:0];             // use low 4 bits of buttons
+  wire [W-1:0] b = { {(W-N){1'b0}}, SW_B };  // zero-extend 2-bit into 4-bit
+  wire [N-1:0] c = SW_C;                      // 2-bit immediate
+  wire [2:0]   F = SW_F;                      // operation select
+  wire [W-1:0] y;
+
+  // -----------------------------
+  // DUT (Q7 shifter wrapper)
+  // Expecting a module: shifter_mips #( .N(N), .W(W) ) (.a,.b,.c,.F,.y)
+  // If your core?s name/ports differ, edit here.
+  // -----------------------------
+  shifter_mips #(.N(N), .W(W)) u_shifter (
+    .a(a),
+    .b(b),
+    .c(c),
+    .F(F),
+    .y(y)
+  );
+
+  // -----------------------------
+  // Drive LEDs and seven-seg
+  // -----------------------------
+  assign LED_Y = y;
+
+  // Show b and c as 0..3 on a single HEX each.
+  // We pad to 4 bits so the hex decoder can render them.
+  seven_seg_hex u_hex_b (.D({2'b00, SW_B}), .seg(HEX_B));
+  seven_seg_hex u_hex_c (.D({2'b00, SW_C}), .seg(HEX_C));
+
+  // If your physical HEX are ACTIVE-HIGH, invert like this:
+  // assign HEX_B = ~HEX_B;
+  // assign HEX_C = ~HEX_C;
+
+endmodule
+
+// ============================================================================
+// Active-LOW seven-seg hex decoder for a single digit (0..F)
+// seg = {a,b,c,d,e,f,g} (0 = LED ON)
+// ============================================================================
+module seven_seg_hex(
+  input  logic [3:0] D,
+  output logic [6:0] seg
+);
+  always_comb
+    unique case (D)
+      4'h0: seg = 7'b1000000;
+      4'h1: seg = 7'b1111001;
+      4'h2: seg = 7'b0100100;
+      4'h3: seg = 7'b0110000;
+      4'h4: seg = 7'b0011001;
+      4'h5: seg = 7'b0010010;
+      4'h6: seg = 7'b0000010;
+      4'h7: seg = 7'b1111000;
+      4'h8: seg = 7'b0000000;
+      4'h9: seg = 7'b0010000;
+      4'hA: seg = 7'b0001000;
+      4'hB: seg = 7'b0000011;
+      4'hC: seg = 7'b1000110;
+      4'hD: seg = 7'b0100001;
+      4'hE: seg = 7'b0000110;
+      default: seg = 7'b0001110; // F
+    endcase
+endmodule
+
