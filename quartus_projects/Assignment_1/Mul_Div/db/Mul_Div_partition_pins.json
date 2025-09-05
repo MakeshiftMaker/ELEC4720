@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "HEX_Y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_Y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_Y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_Y[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_Y[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_Y[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_Y[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_LO[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_LO[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_LO[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_LO[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_LO[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_LO[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_LO[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_HI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_HI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_HI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_HI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_HI[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_HI[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_HI[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_F[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_BTN",
+					"strict" : false
+				},
+				{
+					"name" : "SW_F[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_F[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_F[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW_A[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
