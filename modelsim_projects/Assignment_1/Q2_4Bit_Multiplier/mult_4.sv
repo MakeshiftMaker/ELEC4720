@@ -22,5 +22,6 @@ module mult_4 (
 );
     // Single-cycle combinational multiply (unsigned).
     // If you ever need signed, cast both operands to signed before '*'.
+    //this implementation allows the fpga board to use implemented artihmetic blocks making it more efficient and fast
     assign c = a * b;
 endmodule

@@ -6,6 +6,8 @@ module instruction_classifier (
 
     assign opcode_out = opcode; //we need an output to drive the leds'
 
+    //using assign, the compiler automatically creates the most optimal logic-gate array using boolean arithmatic, instead of using a chain of if/else statements. This allows it to have minimal propogation delay.
+
     // R-type: opcode == 000000
     assign R  = (opcode == 6'b000000);
 

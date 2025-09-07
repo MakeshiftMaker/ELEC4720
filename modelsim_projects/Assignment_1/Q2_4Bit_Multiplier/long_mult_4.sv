@@ -7,6 +7,8 @@ module mult4 (
     logic [7:0] p0, p1, p2, p3;
     // Partial products
 
+    //due to us using long multiplication (hardware) and not descriptive multiplication, the fpga will not be using the implemented arithmetic blocks, which results in more blocks being used in an inefficient way
+
     assign p0 = {4'b0000, a & {4{b[0]}}};
     assign p1 = {3'b000,  a & {4{b[1]}}, 1'b0};
     assign p2 = {2'b00,   a & {4{b[2]}}, 2'b00};

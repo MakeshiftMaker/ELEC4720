@@ -17,6 +17,8 @@ module long_mult_8 (
     assign p6 = {2'b00,       (a & {8{b[6]}}), 6'b000000};
     assign p7 = {1'b0,        (a & {8{b[7]}}), 7'b0000000};
 
+    //same as Q2, the hardware implementation does not allow the compiler to automatically use arithmatic blocks, making this implementation less efficient and more resource intensive
+
     // Sum the partial products
     assign c = p0 + p1 + p2 + p3 + p4 + p5 + p6 + p7;
 

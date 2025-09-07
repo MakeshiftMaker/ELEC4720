@@ -1,11 +1,4 @@
-C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/muldiv.sv {1 {vlog -work work -sv -stats=none {C:\Users\kyeen\Documents\ELEC4720\modelsim_projects\Assignment_1\muldiv.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module muldiv_q8
-
-Top level modules:
-	muldiv_q8
-
-} {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q4_Logic_Unit/tb_logic.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q4_Logic_Unit/tb_logic.sv
+/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q4_Logic_Unit/tb_logic.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q4_Logic_Unit/tb_logic.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tb_q4_logic
 
@@ -26,23 +19,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	mult_4_display
 
-<<<<<<< Updated upstream
-} {} {}} C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/muldiv_top.sv {1 {vlog -work work -sv -stats=none C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/muldiv_top.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module q8_board_top
-
-Top level modules:
-	q8_board_top
-
-} {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q9_Arithmetic_Logic_Unit/tb_alu.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q9_Arithmetic_Logic_Unit/tb_alu.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module tb_alu
-
-Top level modules:
-	tb_alu
-
-=======
->>>>>>> Stashed changes
 } {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_seven_segment_decoder.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/tb_seven_segment_decoder.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tb_seven_segment_decoder
@@ -92,17 +68,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	tb_long_mult_8_display
 
-<<<<<<< Updated upstream
-} {} {}} C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/Shifter_sim.sv {1 {vlog -work work -sv -stats=none C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/Shifter_sim.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module shifter
--- Compiling module shifter_mips
-
-Top level modules:
-	shifter_mips
-
-=======
->>>>>>> Stashed changes
 } {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_mult_4.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_mult_4.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tb_mult4
@@ -138,21 +103,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	logic_unit
 
-<<<<<<< Updated upstream
-} {} {}} C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv {1 {vlog -work work -sv -stats=none C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module tb_Shifter
-
-Top level modules:
-	tb_Shifter
-=======
 } {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q9_Arithmetic_Logic_Unit/top_alu_fpga.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q9_Arithmetic_Logic_Unit/top_alu_fpga.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module top_alu_fpga
 
 Top level modules:
 	top_alu_fpga
->>>>>>> Stashed changes
 
 } {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/mult_4.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/mult_4.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -161,16 +117,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	mult_4
 
-<<<<<<< Updated upstream
-} {} {}} C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/tb_muldiv.sv {1 {vlog -work work -sv -stats=none C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/tb_muldiv.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module tb_muldiv_q8
-
-Top level modules:
-	tb_muldiv_q8
-
-=======
->>>>>>> Stashed changes
 } {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/seven_segment_decoder.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q1_Seven_Segment_Decoder/seven_segment_decoder.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module seven_segment_decoder
@@ -184,23 +130,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	alu
-<<<<<<< Updated upstream
-
-} {} {}} C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/seven_seg.sv {1 {vlog -work work -sv -stats=none C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/seven_seg.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module seven_segment_decoder
-
-Top level modules:
-	seven_segment_decoder
-=======
->>>>>>> Stashed changes
-
-} {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q6_Instruction_Classifier/instruction_classifier.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q6_Instruction_Classifier/instruction_classifier.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module instruction_classifier
-
-Top level modules:
-	instruction_classifier
 
 } {} {}} /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_multi_segment_multiplication.sv {1 {vlog -work work -sv -stats=none /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q2_4Bit_Multiplier/tb_multi_segment_multiplication.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -209,15 +138,4 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	tb_mult4_display
 
-<<<<<<< Updated upstream
-} {} {}} C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/shifter.sv {1 {vlog -work work -sv -stats=none C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/shifter.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Q7_Shifter_top
--- Compiling module seven_seg_hex
-
-Top level modules:
-	Q7_Shifter_top
-
-=======
->>>>>>> Stashed changes
 } {} {}}
