@@ -1,0 +1,12 @@
+module ByteIM #(parameter m=5,n=2) (
+input logic [m-1:0] Ad,
+output logic [(2**n)*8-1:0] Dout
+);
+// 2**n byte wide words
+// m bit wide byte address
+// 2**m bytes of memory
+// 2**(m-n) memory words
+// 2**(n+3) bit wide words
+// Reads the whole word that contains the addressed byte
+ROM #(m-n,2**(n+3)) wordrom(Ad[m-1:n],Dout)
+endmodule

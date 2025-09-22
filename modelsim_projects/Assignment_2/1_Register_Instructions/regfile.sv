@@ -1,0 +1,11 @@
+module regfile(
+input logic clk, WE,
+input logic [4:0] RA1, RA2, WA,
+input logic [31:0] WD,
+output logic [31:0] RD1, RD2);
+logic [31:0] rf[31:0];
+always_ff @(posedge clk)
+if (WE) rf[WA] <= WD;
+assign RD1 = (RA1 ! = 0) ? rf[RA1] : 0;
+assign RD2 = (RA2 ! = 0) ? rf[RA2] : 0;
+endmodule

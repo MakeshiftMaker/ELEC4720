@@ -1,0 +1,6 @@
+module PC #(parameter m=32) (
+input logic increment,
+output logic Ad [31:0]
+);
+
+assign Ad = Ad + increment
