@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Mul_Div
-Fri Sep 05 09:51:55 2025
+Mon Sep  8 09:36:18 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Sep 05 09:51:55 2025       ;
+; Analysis & Synthesis Status     ; Successful - Mon Sep  8 09:36:18 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Mul_Div                                     ;
 ; Top-level Entity Name           ; Mul_Div                                     ;
@@ -161,33 +161,33 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 22          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                        ;
-+-----------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                            ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                         ; Library ;
-+-----------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; ../../../modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv ;         ;
-; lpm_divide.tdf                                                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                ;         ;
-; abs_divider.inc                                                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                               ;         ;
-; sign_div_unsign.inc                                                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                           ;         ;
-; aglobal201.inc                                                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                ;         ;
-; db/lpm_divide_22m.tdf                                                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/kyeen/Documents/ELEC4720/quartus_projects/Assignment_1/Mul_Div/db/lpm_divide_22m.tdf        ;         ;
-; db/sign_div_unsign_5kh.tdf                                                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/kyeen/Documents/ELEC4720/quartus_projects/Assignment_1/Mul_Div/db/sign_div_unsign_5kh.tdf   ;         ;
-; db/alt_u_div_gse.tdf                                                        ; yes             ; Auto-Generated Megafunction  ; C:/Users/kyeen/Documents/ELEC4720/quartus_projects/Assignment_1/Mul_Div/db/alt_u_div_gse.tdf         ;         ;
-; db/lpm_divide_v9m.tdf                                                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/kyeen/Documents/ELEC4720/quartus_projects/Assignment_1/Mul_Div/db/lpm_divide_v9m.tdf        ;         ;
-+-----------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                ;
++-----------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                            ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                 ; Library ;
++-----------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../../../modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv ; yes             ; User SystemVerilog HDL File  ; /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv ;         ;
+; lpm_divide.tdf                                                              ; yes             ; Megafunction                 ; /home/maker/intelFPGA/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                    ;         ;
+; abs_divider.inc                                                             ; yes             ; Megafunction                 ; /home/maker/intelFPGA/20.1/quartus/libraries/megafunctions/abs_divider.inc                                                   ;         ;
+; sign_div_unsign.inc                                                         ; yes             ; Megafunction                 ; /home/maker/intelFPGA/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                               ;         ;
+; aglobal201.inc                                                              ; yes             ; Megafunction                 ; /home/maker/intelFPGA/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                    ;         ;
+; db/lpm_divide_22m.tdf                                                       ; yes             ; Auto-Generated Megafunction  ; /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/quartus_projects/Assignment_1/Mul_Div/db/lpm_divide_22m.tdf        ;         ;
+; db/sign_div_unsign_5kh.tdf                                                  ; yes             ; Auto-Generated Megafunction  ; /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/quartus_projects/Assignment_1/Mul_Div/db/sign_div_unsign_5kh.tdf   ;         ;
+; db/alt_u_div_gse.tdf                                                        ; yes             ; Auto-Generated Megafunction  ; /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/quartus_projects/Assignment_1/Mul_Div/db/alt_u_div_gse.tdf         ;         ;
+; db/lpm_divide_v9m.tdf                                                       ; yes             ; Auto-Generated Megafunction  ; /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/quartus_projects/Assignment_1/Mul_Div/db/lpm_divide_v9m.tdf        ;         ;
++-----------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------+
@@ -271,8 +271,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; 11:1               ; 3 bits    ; 21 LEs        ; 6 LEs                ; 15 LEs                 ; Yes        ; |Mul_Div|MulDiv:u_core|lo[0]     ;
-; 11:1               ; 3 bits    ; 21 LEs        ; 6 LEs                ; 15 LEs                 ; Yes        ; |Mul_Div|MulDiv:u_core|hi[0]     ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 6 LEs                ; 15 LEs                 ; Yes        ; |Mul_Div|MulDiv:u_core|lo[2]     ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 6 LEs                ; 15 LEs                 ; Yes        ; |Mul_Div|MulDiv:u_core|hi[2]     ;
 ; 9:1                ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; No         ; |Mul_Div|MulDiv:u_core|Selector4 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 
@@ -389,40 +389,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 05 09:51:49 2025
+    Info: Processing started: Mon Sep  8 09:36:10 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mul_Div -c Mul_Div
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 3 design units, including 3 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_1/q8_multiplier_divider/muldiv_top.sv
-    Info (12023): Found entity 1: MulDiv File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 14
-    Info (12023): Found entity 2: seven_seg_0to7 File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 98
-    Info (12023): Found entity 3: Mul_Div File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 128
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 3 design units, including 3 entities, in source file /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv
+    Info (12023): Found entity 1: MulDiv File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 14
+    Info (12023): Found entity 2: seven_seg_0to7 File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 98
+    Info (12023): Found entity 3: Mul_Div File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 128
 Info (12127): Elaborating entity "Mul_Div" for the top level hierarchy
-Info (12128): Elaborating entity "MulDiv" for hierarchy "MulDiv:u_core" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 164
-Info (12128): Elaborating entity "seven_seg_0to7" for hierarchy "seven_seg_0to7:u_hex_y" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 167
+Info (12128): Elaborating entity "MulDiv" for hierarchy "MulDiv:u_core" File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 164
+Info (12128): Elaborating entity "seven_seg_0to7" for hierarchy "seven_seg_0to7:u_hex_y" File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 167
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "MulDiv:u_core|Mod0" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 58
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "MulDiv:u_core|Div0" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 59
-Info (12130): Elaborated megafunction instantiation "MulDiv:u_core|lpm_divide:Mod0" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 58
-Info (12133): Instantiated megafunction "MulDiv:u_core|lpm_divide:Mod0" with the following parameter: File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 58
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "MulDiv:u_core|Mod0" File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 58
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "MulDiv:u_core|Div0" File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 59
+Info (12130): Elaborated megafunction instantiation "MulDiv:u_core|lpm_divide:Mod0" File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 58
+Info (12133): Instantiated megafunction "MulDiv:u_core|lpm_divide:Mod0" with the following parameter: File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 58
     Info (12134): Parameter "LPM_WIDTHN" = "3"
     Info (12134): Parameter "LPM_WIDTHD" = "3"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_22m.tdf
-    Info (12023): Found entity 1: lpm_divide_22m File: C:/Users/kyeen/Documents/ELEC4720/quartus_projects/Assignment_1/Mul_Div/db/lpm_divide_22m.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_22m File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/quartus_projects/Assignment_1/Mul_Div/db/lpm_divide_22m.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_5kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_5kh File: C:/Users/kyeen/Documents/ELEC4720/quartus_projects/Assignment_1/Mul_Div/db/sign_div_unsign_5kh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_5kh File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/quartus_projects/Assignment_1/Mul_Div/db/sign_div_unsign_5kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_gse.tdf
-    Info (12023): Found entity 1: alt_u_div_gse File: C:/Users/kyeen/Documents/ELEC4720/quartus_projects/Assignment_1/Mul_Div/db/alt_u_div_gse.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "MulDiv:u_core|lpm_divide:Div0" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 59
-Info (12133): Instantiated megafunction "MulDiv:u_core|lpm_divide:Div0" with the following parameter: File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 59
+    Info (12023): Found entity 1: alt_u_div_gse File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/quartus_projects/Assignment_1/Mul_Div/db/alt_u_div_gse.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "MulDiv:u_core|lpm_divide:Div0" File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 59
+Info (12133): Instantiated megafunction "MulDiv:u_core|lpm_divide:Div0" with the following parameter: File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1/Q8_Multiplier_Divider/muldiv_top.sv Line: 59
     Info (12134): Parameter "LPM_WIDTHN" = "3"
     Info (12134): Parameter "LPM_WIDTHD" = "3"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_v9m.tdf
-    Info (12023): Found entity 1: lpm_divide_v9m File: C:/Users/kyeen/Documents/ELEC4720/quartus_projects/Assignment_1/Mul_Div/db/lpm_divide_v9m.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_v9m File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/quartus_projects/Assignment_1/Mul_Div/db/lpm_divide_v9m.tdf Line: 25
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -432,9 +432,9 @@ Info (21057): Implemented 105 device resources after synthesis - the final resou
     Info (21061): Implemented 72 logic cells
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4865 megabytes
-    Info: Processing ended: Fri Sep 05 09:51:55 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 474 megabytes
+    Info: Processing ended: Mon Sep  8 09:36:18 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
 
 

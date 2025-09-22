@@ -32,18 +32,18 @@ opcode[5] => Equal2.IN1
 opcode[5] => Equal3.IN1
 opcode[5] => Equal4.IN1
 opcode[5] => Equal5.IN1
-opcode_out[0] << opcode[0].DB_MAX_OUTPUT_PORT_TYPE
-opcode_out[1] << opcode[1].DB_MAX_OUTPUT_PORT_TYPE
-opcode_out[2] << opcode[2].DB_MAX_OUTPUT_PORT_TYPE
-opcode_out[3] << opcode[3].DB_MAX_OUTPUT_PORT_TYPE
-opcode_out[4] << opcode[4].DB_MAX_OUTPUT_PORT_TYPE
-opcode_out[5] << opcode[5].DB_MAX_OUTPUT_PORT_TYPE
-R << Equal0.DB_MAX_OUTPUT_PORT_TYPE
-B1 << Equal1.DB_MAX_OUTPUT_PORT_TYPE
-J << Equal2.DB_MAX_OUTPUT_PORT_TYPE
-B2 << Equal3.DB_MAX_OUTPUT_PORT_TYPE
-I << Equal4.DB_MAX_OUTPUT_PORT_TYPE
-F << Equal5.DB_MAX_OUTPUT_PORT_TYPE
-M << opcode[5].DB_MAX_OUTPUT_PORT_TYPE
+opcode_out[0] <= opcode[0].DB_MAX_OUTPUT_PORT_TYPE
+opcode_out[1] <= opcode[1].DB_MAX_OUTPUT_PORT_TYPE
+opcode_out[2] <= opcode[2].DB_MAX_OUTPUT_PORT_TYPE
+opcode_out[3] <= opcode[3].DB_MAX_OUTPUT_PORT_TYPE
+opcode_out[4] <= opcode[4].DB_MAX_OUTPUT_PORT_TYPE
+opcode_out[5] <= opcode[5].DB_MAX_OUTPUT_PORT_TYPE
+R <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+B1 <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+J <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+B2 <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+I <= Equal4.DB_MAX_OUTPUT_PORT_TYPE
+F <= Equal5.DB_MAX_OUTPUT_PORT_TYPE
+M <= opcode[5].DB_MAX_OUTPUT_PORT_TYPE
 
 

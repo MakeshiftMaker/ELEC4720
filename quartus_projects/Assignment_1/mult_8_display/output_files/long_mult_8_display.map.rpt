@@ -1,5 +1,5 @@
 Analysis & Synthesis report for long_mult_8_display
-Mon Sep  1 12:03:08 2025
+Mon Sep  8 09:26:05 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Sep  1 12:03:08 2025       ;
+; Analysis & Synthesis Status     ; Successful - Mon Sep  8 09:26:05 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; long_mult_8_display                         ;
 ; Top-level Entity Name           ; long_mult_8_display                         ;
@@ -295,7 +295,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -305,7 +305,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep  1 12:03:01 2025
+    Info: Processing started: Mon Sep  8 09:25:53 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mult_8_display -c long_mult_8_display
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -330,8 +330,8 @@ Info (21057): Implemented 162 device resources after synthesis - the final resou
     Info (21061): Implemented 118 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 458 megabytes
-    Info: Processing ended: Mon Sep  1 12:03:08 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Processing ended: Mon Sep  8 09:26:05 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:27
 
 

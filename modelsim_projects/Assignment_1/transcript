@@ -1,230 +1,107 @@
-# Compile of shifter.sv failed with 1 errors.
+# Loading project Assignment_1
+# Compile of multi_digit_display.sv was successful.
+# Compile of seven_segment_decoder.sv was successful.
+# Compile of tb_multi_digit_display.sv was successful.
+# Compile of tb_seven_segment_decoder.sv was successful.
+# Compile of mult_4.sv was successful.
+# Compile of multi_segment_multiplication.sv was successful.
+# Compile of tb_mult_4.sv was successful.
+# Compile of tb_multi_segment_multiplication.sv was successful.
+# Compile of long_mult_4.sv was successful.
+# Compile of long_mult_8.sv was successful.
+# Compile of long_mult_8_display.sv was successful.
+# Compile of mult_8.sv was successful.
+# Compile of tb_long_mult_8.sv was successful.
+# Compile of tb_long_mult_8_display.sv was successful.
+# Compile of logic.sv was successful.
+# Compile of tb_logic.sv was successful.
+# Compile of mult_8_display.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of top_alu_fpga.sv was successful.
+# 22 compiles, 7 failed with no errors.
+# Compile of multi_digit_display.sv was successful.
+# Compile of seven_segment_decoder.sv was successful.
+# Compile of tb_multi_digit_display.sv was successful.
+# Compile of tb_seven_segment_decoder.sv was successful.
+# Compile of mult_4.sv was successful.
+# Compile of multi_segment_multiplication.sv was successful.
+# Compile of tb_mult_4.sv was successful.
+# Compile of tb_multi_segment_multiplication.sv was successful.
+# Compile of long_mult_4.sv was successful.
+# Compile of long_mult_8.sv was successful.
+# Compile of long_mult_8_display.sv was successful.
+# Compile of mult_8.sv was successful.
+# Compile of tb_long_mult_8.sv was successful.
+# Compile of tb_long_mult_8_display.sv was successful.
+# Compile of logic.sv was successful.
+# Compile of tb_logic.sv was successful.
+# Compile of mult_8_display.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of top_alu_fpga.sv was successful.
+# 22 compiles, 7 failed with no errors.
+# Compile of multi_digit_display.sv was successful.
+# Compile of seven_segment_decoder.sv was successful.
+# Compile of tb_multi_digit_display.sv was successful.
+# Compile of tb_seven_segment_decoder.sv was successful.
+# Compile of mult_4.sv was successful.
+# Compile of multi_segment_multiplication.sv was successful.
+# Compile of tb_mult_4.sv was successful.
+# Compile of tb_multi_segment_multiplication.sv was successful.
+# Compile of long_mult_4.sv was successful.
+# Compile of long_mult_8.sv was successful.
+# Compile of long_mult_8_display.sv was successful.
+# Compile of mult_8.sv was successful.
+# Compile of tb_long_mult_8.sv was successful.
+# Compile of tb_long_mult_8_display.sv was successful.
+# Compile of logic.sv was successful.
+# Compile of tb_logic.sv was successful.
+# Compile of mult_8_display.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of top_alu_fpga.sv was successful.
 # Compile of shifter.sv was successful.
-# Compile of tb_shifter.sv was successful.
-vsim -gui work.shifter
-# vsim -gui work.shifter 
-# Start time: 10:30:53 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.shifter
-run -all
-quit -sim
-# End time: 10:39:03 on Sep 05,2025, Elapsed time: 0:08:10
-# Errors: 0, Warnings: 7
-# Compile of tb_shifter.sv was successful.
-vsim -gui work.tb_q7_shift_bin
-# vsim -gui work.tb_q7_shift_bin 
-# Start time: 10:40:10 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.tb_q7_shift_bin
-# ** Error: (vsim-3033) Instantiation of 'Q7_Shifter' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shift_bin File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-#         Searched libraries:
-#             C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/work
-# Error loading design
-# End time: 10:40:11 on Sep 05,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 2
-# Compile of tb_shifter.sv was successful.
-# Compile of shifter.sv was successful.
-vsim -gui work.shifter
-# vsim -gui work.shifter 
-# Start time: 10:45:12 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.shifter
-run -all
-# Compile of shifter.sv was successful.
-# Compile of tb_shifter.sv was successful.
-# 2 compiles, 0 failed with no errors.
-quit -sim
-# End time: 10:46:13 on Sep 05,2025, Elapsed time: 0:01:01
-# Errors: 0, Warnings: 4
-# Load canceled
-vsim -gui work.tb_q7_shifter
-# vsim -gui work.tb_q7_shifter 
-# Start time: 10:46:57 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.tb_q7_shifter
-# ** Error: (vsim-3033) Instantiation of 'Q7_Shifter' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-#         Searched libraries:
-#             C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/work
-# Error loading design
-# End time: 10:46:58 on Sep 05,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 1
-# Compile of shifter.sv was successful.
-# Compile of tb_shifter.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.tb_q7_shifter
-# vsim -gui work.tb_q7_shifter 
-# Start time: 10:48:21 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.tb_q7_shifter
-# ** Error: (vsim-3033) Instantiation of 'Q7_Shifter' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-#         Searched libraries:
-#             C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/work
-# Error loading design
-# End time: 10:48:21 on Sep 05,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 2
-# Compile of shifter.sv was successful.
-# Compile of tb_shifter.sv was successful.
-# 2 compiles, 0 failed with no errors.
-# Compile of shifter.sv was successful.
-# Compile of tb_shifter.sv was successful.
-# 2 compiles, 26 failed with no errors.
-vsim -gui work.tb_q7_shifter
-# vsim -gui work.tb_q7_shifter 
-# Start time: 10:49:57 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.tb_q7_shifter
-# Loading work.Q7_Shifter
-# Loading work.shifter_mips
-# Loading work.shifter
-# Loading work.seven_seg_hex
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error: (vsim-3063) Port 'a' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error: (vsim-3063) Port 'b' not found in the connected module (2nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error: (vsim-3063) Port 'c' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error: (vsim-3063) Port 'F' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error: (vsim-3063) Port 'y' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Warning: (vsim-3722) C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv(14): [TFMPC] - Missing connection for port 'BTN_A'.
-# ** Warning: (vsim-3722) C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv(14): [TFMPC] - Missing connection for port 'SW_F'.
-# ** Warning: (vsim-3722) C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv(14): [TFMPC] - Missing connection for port 'SW_B'.
-# ** Warning: (vsim-3722) C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv(14): [TFMPC] - Missing connection for port 'SW_C'.
-# ** Warning: (vsim-3722) C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv(14): [TFMPC] - Missing connection for port 'LED_Y'.
-# ** Warning: (vsim-3722) C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv(14): [TFMPC] - Missing connection for port 'HEX_B'.
-# ** Warning: (vsim-3722) C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv(14): [TFMPC] - Missing connection for port 'HEX_C'.
-# Error loading design
-# End time: 10:49:58 on Sep 05,2025, Elapsed time: 0:00:01
-# Errors: 5, Warnings: 11
-# Compile of shifter.sv was successful.
-# Compile of tb_shifter.sv was successful.
 # Compile of Shifter_sim.sv was successful.
-# 3 compiles, 0 failed with no errors.
-vsim -gui work.tb_q7_shifter
-# vsim -gui work.tb_q7_shifter 
-# Start time: 10:56:15 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.tb_q7_shifter
-# Loading work.Q7_Shifter
-# ** Error (suppressible): (vsim-3389) Port 'a' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error (suppressible): (vsim-3389) Port 'b' not found in the connected module (2nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error (suppressible): (vsim-3389) Port 'c' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error (suppressible): (vsim-3389) Port 'y' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'F'. The port definition is at: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/Shifter_sim.sv(19).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# Error loading design
-# End time: 10:56:15 on Sep 05,2025, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 4
 # Compile of tb_shifter.sv was successful.
-vsim -gui work.tb_q7_shifter
-# vsim -gui work.tb_q7_shifter 
-# Start time: 11:00:29 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.tb_q7_shifter
-# Loading work.Q7_Shifter
-# ** Error (suppressible): (vsim-3389) Port 'a' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error (suppressible): (vsim-3389) Port 'b' not found in the connected module (2nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error (suppressible): (vsim-3389) Port 'c' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Error (suppressible): (vsim-3389) Port 'y' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'F'. The port definition is at: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/Shifter_sim.sv(19).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_q7_shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 14
-# Error loading design
-# End time: 11:00:30 on Sep 05,2025, Elapsed time: 0:00:01
-# Errors: 4, Warnings: 3
-# Compile of tb_shifter.sv was successful.
+# Compile of muldiv.sv was successful.
+# Compile of muldiv_top.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of tb_muldiv.sv was successful.
+# 29 compiles, 0 failed with no errors.
+# Compile of multi_digit_display.sv was successful.
+# Compile of seven_segment_decoder.sv was successful.
+# Compile of tb_multi_digit_display.sv was successful.
+# Compile of tb_seven_segment_decoder.sv was successful.
+# Compile of mult_4.sv was successful.
+# Compile of multi_segment_multiplication.sv was successful.
+# Compile of tb_mult_4.sv was successful.
+# Compile of tb_multi_segment_multiplication.sv was successful.
+# Compile of long_mult_4.sv was successful.
+# Compile of long_mult_8.sv was successful.
+# Compile of long_mult_8_display.sv was successful.
+# Compile of mult_8.sv was successful.
+# Compile of tb_long_mult_8.sv was successful.
+# Compile of tb_long_mult_8_display.sv was successful.
+# Compile of logic.sv was successful.
+# Compile of tb_logic.sv was successful.
+# Compile of mult_8_display.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of top_alu_fpga.sv was successful.
+# Compile of shifter.sv was successful.
 # Compile of Shifter_sim.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.tb_Shifter
-# vsim -gui work.tb_Shifter 
-# Start time: 11:02:14 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.tb_Shifter
-# Loading work.Q7_Shifter
-# ** Error (suppressible): (vsim-3389) Port 'B' not found in the connected module (2nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_Shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 17
-# ** Error (suppressible): (vsim-3389) Port 'C' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_Shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 17
-# Error loading design
-# End time: 11:02:15 on Sep 05,2025, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 2
 # Compile of tb_shifter.sv was successful.
-vsim -gui work.tb_Shifter
-# vsim -gui work.tb_Shifter 
-# Start time: 11:06:40 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.tb_Shifter
-# Loading work.Q7_Shifter
-# ** Error (suppressible): (vsim-3389) Port 'a' not found in the connected module (1st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_Shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 15
-# ** Error (suppressible): (vsim-3389) Port 'b' not found in the connected module (2nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_Shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 15
-# ** Error (suppressible): (vsim-3389) Port 'c' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_Shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 15
-# ** Error (suppressible): (vsim-3389) Port 'y' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_Shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 15
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'F'. The port definition is at: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/Shifter_sim.sv(19).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_Shifter/dut File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 15
-# Error loading design
-# End time: 11:06:41 on Sep 05,2025, Elapsed time: 0:00:01
-# Errors: 4, Warnings: 3
-# Compile of tb_shifter.sv was successful.
-vsim -gui work.tb_Shifter
-# vsim -gui work.tb_Shifter 
-# Start time: 11:08:45 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.tb_Shifter
-# ** Error: (vsim-3033) Instantiation of 'Q7_Shifter_mips' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_Shifter File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv Line: 15
-#         Searched libraries:
-#             C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/work
-# Error loading design
-# End time: 11:08:45 on Sep 05,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 2
-# Compile of tb_shifter.sv was successful.
-vsim -gui work.tb_Shifter
-# vsim -gui work.tb_Shifter 
-# Start time: 11:09:46 on Sep 05,2025
-# Loading sv_std.std
-# Loading work.tb_Shifter
-# Loading work.shifter_mips
-# Loading work.shifter
-run -all
-# TB F=3, ports a,b,c,F,y
-# 1000 | SLL c=0 F=000 a=11 (1011) b=0 (0000) c=0 (00) -> y=11 (1011) exp=11 (1011)
-# 2000 | SLL c=1 F=000 a=11 (1011) b=0 (0000) c=1 (01) -> y=6 (0110) exp=6 (0110)
-# 3000 | SRL c=2 F=001 a=11 (1011) b=0 (0000) c=2 (10) -> y=2 (0010) exp=2 (0010)
-# 4000 | SRA c=1 F=011 a=11 (1011) b=0 (0000) c=1 (01) -> y=13 (1101) exp=13 (1101)
-# 5000 | SLLV b F=100 a=3 (0011) b=2 (0010) c=0 (00) -> y=12 (1100) exp=12 (1100)
-# 6000 | SRLV b F=101 a=3 (0011) b=2 (0010) c=0 (00) -> y=0 (0000) exp=0 (0000)
-# 7000 | SRAV b F=111 a=3 (0011) b=2 (0010) c=0 (00) -> y=0 (0000) exp=0 (0000)
-# 8000 | RAND[0] F=011 a=8 (1000) b=6 (0110) c=2 (10) -> y=14 (1110) exp=14 (1110)
-# 9000 | RAND[1] F=101 a=6 (0110) b=6 (0110) c=2 (10) -> y=1 (0001) exp=1 (0001)
-# 10000 | RAND[2] F=011 a=7 (0111) b=10 (1010) c=2 (10) -> y=1 (0001) exp=1 (0001)
-# 11000 | RAND[3] F=011 a=15 (1111) b=6 (0110) c=1 (01) -> y=15 (1111) exp=15 (1111)
-# 12000 | RAND[4] F=001 a=14 (1110) b=13 (1101) c=3 (11) -> y=1 (0001) exp=1 (0001)
-# 13000 | RAND[5] F=001 a=3 (0011) b=0 (0000) c=1 (01) -> y=1 (0001) exp=1 (0001)
-# 14000 | RAND[6] F=011 a=5 (0101) b=9 (1001) c=1 (01) -> y=2 (0010) exp=2 (0010)
-# 15000 | RAND[7] F=111 a=8 (1000) b=11 (1011) c=2 (10) -> y=15 (1111) exp=15 (1111)
-# 16000 | RAND[8] F=000 a=9 (1001) b=0 (0000) c=0 (00) -> y=9 (1001) exp=9 (1001)
-# 17000 | RAND[9] F=111 a=4 (0100) b=14 (1110) c=0 (00) -> y=1 (0001) exp=1 (0001)
-# 18000 | RAND[10] F=111 a=5 (0101) b=7 (0111) c=0 (00) -> y=0 (0000) exp=0 (0000)
-# 19000 | RAND[11] F=001 a=2 (0010) b=3 (0011) c=0 (00) -> y=2 (0010) exp=2 (0010)
-# PASS
-# ** Note: $finish    : C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_1/Q7_Shifter/tb_shifter.sv(53)
-#    Time: 19 ns  Iteration: 0  Instance: /tb_Shifter
-# End time: 11:10:00 on Sep 05,2025, Elapsed time: 0:00:14
-# Errors: 0, Warnings: 0
+# Compile of muldiv.sv was successful.
+# Compile of muldiv_top.sv was successful.
+# Compile of seven_seg.sv was successful.
+# Compile of tb_muldiv.sv was successful.
+# 29 compiles, 0 failed with no errors.

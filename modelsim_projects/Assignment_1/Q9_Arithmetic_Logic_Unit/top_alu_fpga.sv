@@ -11,11 +11,11 @@ module top_alu_fpga (
     assign B_out = B;
 
     alu #(.N(3)) alu_inst (
-        .A(A), .B(B), .F(F), .Y(Y), .Cout(Cout), .OV(OV)
+        .A(~A), .B(B), .F(F), .Y(Y), .Cout(Cout), .OV(OV)
     );
     
     multi_digit_display #(.NUM_DIGITS(1)) disp_a (
-        .number(A),
+        .number(~A),
 	.seg(seg_a)
     );
   

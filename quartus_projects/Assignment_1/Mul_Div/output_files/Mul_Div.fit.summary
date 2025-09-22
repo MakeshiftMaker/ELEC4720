@@ -1,4 +1,4 @@
-Fitter Status : Successful - Fri Sep 05 09:52:29 2025
+Fitter Status : Successful - Mon Sep  8 09:36:41 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Mul_Div
 Top-level Entity Name : Mul_Div
@@ -6,7 +6,7 @@ Family : Cyclone V
 Device : 5CGXFC5C6F27C7
 Timing Models : Final
 Logic utilization (in ALMs) : 35 / 29,080 ( < 1 % )
-Total registers : 17
+Total registers : 18
 Total pins : 32 / 364 ( 9 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,567,040 ( 0 % )

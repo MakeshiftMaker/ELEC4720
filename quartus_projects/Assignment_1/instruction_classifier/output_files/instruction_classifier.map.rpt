@@ -1,5 +1,5 @@
 Analysis & Synthesis report for instruction_classifier
-Tue Sep  2 17:48:42 2025
+Mon Sep  8 09:32:35 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Sep  2 17:48:42 2025       ;
+; Analysis & Synthesis Status     ; Successful - Mon Sep  8 09:32:35 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; instruction_classifier                      ;
 ; Top-level Entity Name           ; instruction_classifier                      ;
@@ -251,7 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -261,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Sep  2 17:48:35 2025
+    Info: Processing started: Mon Sep  8 09:32:25 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off instruction_classifier -c instruction_classifier
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -276,9 +276,9 @@ Info (21057): Implemented 25 device resources after synthesis - the final resour
     Info (21059): Implemented 13 output pins
     Info (21061): Implemented 6 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 456 megabytes
-    Info: Processing ended: Tue Sep  2 17:48:42 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 457 megabytes
+    Info: Processing ended: Mon Sep  8 09:32:35 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 
