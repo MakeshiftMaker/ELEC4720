@@ -18,17 +18,6 @@ module mips(
         .Ad(pc_out),
         .Dout(rom_data)
     );
-    logic R, B1, J, B2, I, F, M
-    instruction_classifier ic (
-	.opcode(rom_data[31:26],
-	.R(R),
-	.B1(B1),
-	.J(J),
-	.B2(B2),
-	.I(I),
-	.F(F),
-	.M(M)
-    );	
 
     // clock generator (period = 10 time units)
     //initial clk = 0;

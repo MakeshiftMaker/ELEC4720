@@ -1,3 +1,242 @@
 # Loading project Assignment_1
 # reading /home/maker/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
 # Loading project mips_processor
+# Compile of ByteIM.sv failed with 1 errors.
+# Compile of regfile.sv failed with 2 errors.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv failed with 2 errors.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# 9 compiles, 3 failed with 5 errors.
+# Compile of ByteIM.sv failed with 1 errors.
+# Compile of regfile.sv failed with 2 errors.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv failed with 2 errors.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# 9 compiles, 3 failed with 5 errors.
+# Load canceled
+# Compile of ByteIM.sv failed with 1 errors.
+# Compile of regfile.sv failed with 2 errors.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# 10 compiles, 2 failed with 3 errors.
+# Compile of ByteIM.sv failed with 1 errors.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 12:17:24 on Sep 22,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# ** Fatal: (vsim-3365) Too many port connections. Expected 0, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv Line: 10
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 12:17:25 on Sep 22,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 25
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv failed with 4 errors.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# 10 compiles, 1 failed with 4 errors.
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 12:19:23 on Sep 22,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# ** Fatal: (vsim-3365) Too many port connections. Expected 0, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv Line: 10
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 12:19:23 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv failed with 1 errors.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# 10 compiles, 1 failed with 1 error.
+# Load canceled
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 12:20:37 on Sep 22,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 17
+add wave -position end  sim:/tb_mips1/clk
+add wave -position end  sim:/tb_mips1/reset
+add wave -position end  sim:/tb_mips1/pc_out
+add wave -position end  sim:/tb_mips1/rom_data
+run
+# ** Warning: (vsim-7) Failed to open readmem file "program.dat" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv(12)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst/wordrom
+# Time   PC         ROM Data
+# ---------------------------
+#   15   00000000   xxxxxxxx
+#   25   00000004   xxxxxxxx
+#   35   00000008   xxxxxxxx
+#   45   0000000c   xxxxxxxx
+#   55   00000010   xxxxxxxx
+#   65   00000014   xxxxxxxx
+#   75   00000018   xxxxxxxx
+#   85   0000001c   xxxxxxxx
+#   95   00000020   xxxxxxxx
+run
+#  105   00000024   xxxxxxxx
+# ** Note: $finish    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv(35)
+#    Time: 105 ps  Iteration: 1  Instance: /tb_mips1
+# 1
+# Break in Module tb_mips1 at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv line 35
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.tb_mips1
+# End time: 12:24:04 on Sep 22,2025, Elapsed time: 0:03:27
+# Errors: 0, Warnings: 6
+# vsim work.tb_mips1 
+# Start time: 12:24:04 on Sep 22,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 17
+add wave -position end  sim:/tb_mips1/clk
+add wave -position end  sim:/tb_mips1/reset
+add wave -position end  sim:/tb_mips1/pc_out
+add wave -position end  sim:/tb_mips1/rom_data
+run
+# Time   PC         ROM Data
+# ---------------------------
+#   15   00000000   0000000a
+#   25   00000004   00000005
+#   35   00000008   0000000f
+#   45   0000000c   00000003
+#   55   00000010   00000009
+#   65   00000014   0000000c
+#   75   00000018   00000001
+#   85   0000001c   00000007
+#   95   00000020   0000000a
+quit -sim
+# End time: 12:25:39 on Sep 22,2025, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 2
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 12:26:18 on Sep 22,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 17
+add wave -position end  sim:/tb_mips1/rom_data
+run
+# Time   PC         ROM Data
+# ---------------------------
+run
+run
+#   15   00000000   0000afff
+run
+run
+#   25   00000004   00000005
+run
+#   35   00000008   0000000f
+run
+#   45   0000000c   00000003
+run
+#   55   00000010   00000009
+run
+#   65   00000014   0000000c
+run
+#   75   00000018   00000001
+run
+#   85   0000001c   00000007
+run
+#   95   00000020   0000afff
+add wave -position end  sim:/tb_mips1/pc_out
+run
+#  105   00000024   00000005
+# ** Note: $finish    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv(35)
+#    Time: 105 ps  Iteration: 1  Instance: /tb_mips1
+# 1
+# Break in Module tb_mips1 at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv line 35

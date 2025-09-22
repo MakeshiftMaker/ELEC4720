@@ -8,5 +8,5 @@ output logic [(2**n)*8-1:0] Dout
 // 2**(m-n) memory words
 // 2**(n+3) bit wide words
 // Reads the whole word that contains the addressed byte
-ROM #(m-n,2**(n+3)) wordrom(Ad[m-1:n],Dout);
+ROM #(m-n,2**(n+3)) wordrom(Ad[m-1:n],Dout)
 endmodule

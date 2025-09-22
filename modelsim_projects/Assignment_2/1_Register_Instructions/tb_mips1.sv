@@ -1,0 +1,37 @@
+module tb_mips1;
+    logic clk;
+    logic reset;
+
+    // outputs from mips
+    logic [31:0] pc_out;
+    logic [31:0] rom_data;
+
+    // DUT (device under test)
+    mips dut (
+        .clk(clk),
+        .reset(reset),
+        .pc_out(pc_out),
+        .rom_data(rom_data)
+    );
+
+    // clock generator
+    initial clk = 0;
+    always #5 clk = ~clk;
+
+    // stimulus
+    initial begin
+        $display("Time   PC         ROM Data");
+        $display("---------------------------");
+
+        reset = 1;
+        #12 reset = 0; // release reset
+
+        // run for a while
+        repeat (10) begin
+            @(posedge clk);
+            $display("%4t   %h   %h", $time, pc_out, rom_data);
+        end
+
+        $finish;
+    end
+endmodule

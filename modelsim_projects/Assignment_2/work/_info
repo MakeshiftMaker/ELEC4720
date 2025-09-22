@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
@@ -8,3 +9,256 @@ z2
 !i10f 100
 cModel Technology
 d/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1
+valu
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1758507829
+!i10b 1
+!s100 kJT17gSjR@bTYOg9?7[XC2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I2BI0^LegQJDH3KKekRV@o3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 d/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2
+w1756801536
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/alu.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/alu.sv
+!i122 72
+L0 1 53
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1758507829.000000
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/alu.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vByteIM
+R0
+R1
+!i10b 1
+!s100 3R84zMa=<;K8]3<YaL>oc1
+R2
+I7O?keQ8?OZUaXgIPiXzm<0
+R3
+S1
+R4
+w1758507431
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv
+!i122 67
+L0 1 12
+R5
+r1
+!s85 0
+31
+!s108 1758507828.000000
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv|
+!i113 1
+R7
+R8
+n@byte@i@m
+vinstruction_classifier
+R0
+Z9 !s110 1758507830
+!i10b 1
+!s100 4D=JZ4eG_Dzm_IWzN=jW?3
+R2
+I``OaEHO2F2_mTLghVRo=G2
+R3
+S1
+R4
+w1757209544
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/instruction_classifier.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/instruction_classifier.sv
+!i122 73
+L0 1 32
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/instruction_classifier.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/instruction_classifier.sv|
+!i113 1
+R7
+R8
+vmips
+R0
+R1
+!i10b 1
+!s100 [BN8a5D6Y=A?T5Kb;cZ3n1
+R2
+I6eRT:WfYbog_[1QMP=M9V1
+R3
+S1
+R4
+w1758507625
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv
+!i122 70
+L0 1 26
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv|
+!i113 1
+R7
+R8
+vPC
+R0
+R1
+!i10b 1
+!s100 3DY1bWR0PZmlUehTk_OJ<1
+R2
+IZ`KAZHh0h_ecY8I;aONLf2
+R3
+S1
+R4
+w1758505913
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv
+!i122 71
+L0 1 16
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv|
+!i113 1
+R7
+R8
+n@p@c
+vregfile
+R0
+R1
+!i10b 1
+!s100 4UDOFNmGhi3SR54gHo:zc1
+R2
+IGEgF_Uia_3E73z2CiGkOE0
+R3
+S1
+R4
+w1758507405
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv
+!i122 68
+L0 1 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv|
+!i113 1
+R7
+R8
+vROM
+R0
+R1
+!i10b 1
+!s100 Pflb=]1PCd[j=TLU@lj[e2
+R2
+IJUXlB:Z7UjiRP2ccSbP8[0
+R3
+S1
+R4
+w1758507825
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv
+!i122 69
+L0 1 14
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv|
+!i113 1
+R7
+R8
+n@r@o@m
+vtb_alu
+R0
+R9
+!i10b 1
+!s100 fjEGG>FPmO:QJnVbS14d=0
+R2
+I?`F[`TZgO`JF>OK7FklDA2
+R3
+S1
+R4
+w1757207902
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_alu.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_alu.sv
+!i122 74
+L0 3 46
+R5
+r1
+!s85 0
+31
+Z10 !s108 1758507830.000000
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_alu.sv|
+!i113 1
+R7
+R8
+vtb_instruction_classifier
+R0
+R9
+!i10b 1
+!s100 :[z`V6;6>H74Ckkj]SHGM1
+R2
+IDL4>6?8ajdY8CROnGK2G_3
+R3
+S1
+R4
+w1756695040
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv
+!i122 75
+L0 1 19
+R5
+r1
+!s85 0
+31
+R10
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv|
+!i113 1
+R7
+R8
+vtb_mips1
+R0
+R9
+!i10b 1
+!s100 W[zRcP3TLRPPLE]UVhD]C0
+R2
+Ii9C?HHPT]C0Q_9S]aQm1D0
+R3
+S1
+R4
+w1758507306
+8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv
+F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv
+!i122 76
+L0 1 37
+R5
+r1
+!s85 0
+31
+R10
+!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv|
+!i113 1
+R7
+R8
