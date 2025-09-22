@@ -240,3 +240,5 @@ run
 #    Time: 105 ps  Iteration: 1  Instance: /tb_mips1
 # 1
 # Break in Module tb_mips1 at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv line 35
+# End time: 12:58:52 on Sep 22,2025, Elapsed time: 0:32:34
+# Errors: 0, Warnings: 2
