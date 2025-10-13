@@ -1,53 +1,35 @@
 module alu #(
     parameter N = 32
 )(
-    input  logic [N-1:0] A, B,
-    input  logic [3:0]   F,
-    output logic [N-1:0] Y,
-    output logic Cout,    // carry out
-    output logic OV       // overflow flag
+    input  logic [N-1:0] A,      // first operand
+    input  logic [N-1:0] B,      // second operand
+    input  logic [3:0]   F,      // ALU control signal
+    output logic [N-1:0] Y,      // ALU result
+    output logic         Zero     // 1 if result is zero
 );
 
-    logic signed [N-1:0] As, Bs;  
-    assign As = A;
-    assign Bs = B;
+    // internal signed versions for SLT
+    logic signed [N-1:0] As = $signed(A);
+    logic signed [N-1:0] Bs = $signed(B);
 
     always_comb begin
-        // default assignments so Quartus is happy
-        Y    = '0;
-        Cout = 1'b0;
-        OV   = 1'b0;
-
-        case (F)
-            4'b0000: begin // signed add
-                {Cout, Y} = As + Bs;
-                OV   = (As[N-1] == Bs[N-1]) && (Y[N-1] != As[N-1]);
-            end
-
-            4'b0001: begin // unsigned add
-                {Cout, Y} = A + B;
-                OV   = 1'b0;
-            end
-
-            4'b0010: begin // signed sub
-                {Cout, Y} = As - Bs;
-                OV   = (As[N-1] != Bs[N-1]) && (Y[N-1] != As[N-1]);
-            end
-
-            4'b0011: begin // unsigned sub
-                {Cout, Y} = A - B;
-                OV   = 1'b0;
-            end
-
-            4'b0100: Y = A & B;     
-            4'b0101: Y = A | B;     
-            4'b0110: Y = A ^ B;     
-            4'b0111: Y = ~(A | B);  
-
-            4'b1010: Y = (As < Bs) ? 1 : 0;  // signed less than
-            4'b1011: Y = (A < B)   ? 1 : 0;  // unsigned less than
-
-            default: ; // already covered by defaults at top
+        case(F)
+            4'b0000: Y = A + B;            // ADD
+            4'b0001: Y = A + B;            // ADDU (unsigned handled the same for bitwise)
+            4'b0010: Y = A - B;            // SUB
+            4'b0011: Y = A - B;            // SUBU
+            4'b0100: Y = A & B;            // AND
+            4'b0101: Y = A | B;            // OR
+            4'b0110: Y = A ^ B;            // XOR
+            4'b0111: Y = ~(A | B);         // NOR
+            4'b1010: Y = (As < Bs) ? 32'd1 : 32'd0;  // SLT
+            4'b1011: Y = (A < B) ? 32'd1 : 32'd0;    // SLTU
+            default: Y = '0;
         endcase
     end
+
+    // Zero flag for branch equality
+    assign Zero = (Y == 0);
+
 endmodule
+

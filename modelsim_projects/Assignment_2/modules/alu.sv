@@ -1,83 +1,71 @@
 module alu #(
     parameter N = 32
 )(
-    input  logic [N-1:0] A, B,
-    input  logic [3:0]   F,        // function code
-    output logic [N-1:0] Y,
-    output logic         Cout,     // carry-out for unsigned ops
-    output logic         OV        // overflow flag for signed ops
+    input  logic [N-1:0] A,      // first operand
+    input  logic [N-1:0] B,      // second operand
+    input  logic [3:0]   F,      // ALU control signal
+    output logic [N-1:0] Y,      // ALU result
+    output logic         Zero,    // 1 if result is zero
+    output logic         OV       // overflow flag for signed ops
 );
 
-    // Function codes (for readability)
-    localparam [3:0]
-        ADD  = 4'b0000,
-        ADDU = 4'b0001,
-        SUB  = 4'b0010,
-        SUBU = 4'b0011,
-        AND  = 4'b0100,
-        OR   = 4'b0101,
-        XOR  = 4'b0110,
-        NOR  = 4'b0111,
-        SLT  = 4'b1010,
-        SLTU = 4'b1011;
-
-    // internal signals
+    // Signed versions of operands for signed operations
     logic signed [N-1:0] As = $signed(A);
     logic signed [N-1:0] Bs = $signed(B);
-    logic [N:0] sum; // N+1 bits for carry out
+    logic [N:0] sum; // for unsigned operations carry/overflow detection
 
     always_comb begin
-        // defaults
-        Y    = '0;
-        Cout = 1'b0;
-        OV   = 1'b0;
+        // Defaults
+        Y  = '0;
+        OV = 1'b0;
 
         case(F)
-            ADD: begin
-                // signed add: OV meaningful, Cout not used
+            // -------------------------------
+            // ADD (signed)
+            4'b0000: begin
                 Y  = As + Bs;
                 OV = (As[N-1] == Bs[N-1]) && (Y[N-1] != As[N-1]);
-                Cout = 1'b0;
             end
 
-            ADDU: begin
-                // unsigned add: Cout meaningful
-                sum  = {1'b0, A} + {1'b0, B};
-                Y    = sum[N-1:0];
-                Cout = sum[N];
-                OV   = 1'b0;
+            // ADDU (unsigned)
+            4'b0001: begin
+                sum = {1'b0, A} + {1'b0, B};
+                Y   = sum[N-1:0];
+                OV  = 1'b0; // ignore overflow
             end
 
-            SUB: begin
-                // signed subtraction
+            // SUB (signed)
+            4'b0010: begin
                 Y  = As - Bs;
                 OV = (As[N-1] != Bs[N-1]) && (Y[N-1] != As[N-1]);
-                Cout = 1'b0;
             end
 
-            SUBU: begin
-                // unsigned subtraction: borrow represented in Cout
-                sum  = {1'b0, A} - {1'b0, B};
-                Y    = sum[N-1:0];
-                Cout = sum[N];  // Cout=0 => borrow occurred
-                OV   = 1'b0;
+            // SUBU (unsigned)
+            4'b0011: begin
+                sum = {1'b0, A} - {1'b0, B};
+                Y   = sum[N-1:0];
+                OV  = 1'b0; // ignore overflow
             end
 
-            AND:  Y = A & B;
-            OR:   Y = A | B;
-            XOR:  Y = A ^ B;
-            NOR:  Y = ~(A | B);
+            // Bitwise operations
+            4'b0100: Y = A & B;  // AND
+            4'b0101: Y = A | B;  // OR
+            4'b0110: Y = A ^ B;  // XOR
+            4'b0111: Y = ~(A | B); // NOR
 
-            SLT:  Y = (As < Bs) ? 32'd1 : 32'd0;  // signed less than
-            SLTU: Y = (A < B)   ? 32'd1 : 32'd0;  // unsigned less than
+            // Set on less than
+            4'b1010: Y = (As < Bs) ? 32'd1 : 32'd0;  // SLT (signed)
+            4'b1011: Y = (A < B) ? 32'd1 : 32'd0;    // SLTU (unsigned)
 
             default: begin
-                Y    = '0;
-                Cout = 1'b0;
-                OV   = 1'b0;
+                Y  = '0;
+                OV = 1'b0;
             end
         endcase
     end
+
+    // Zero flag (for branch instructions)
+    assign Zero = (Y == 0);
 
 endmodule
 

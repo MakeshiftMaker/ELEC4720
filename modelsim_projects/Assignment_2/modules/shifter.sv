@@ -1,0 +1,19 @@
+module shifter #(
+    parameter WIDTH = 32
+)(
+    input  logic [WIDTH-1:0] in,
+    input  logic [4:0]       shamt,     // shift amount (0-31)
+    input  logic [1:0]       sh_type,   // 00=LSL, 01=LSR, 10=ASR
+    output logic [WIDTH-1:0] out
+);
+
+    always_comb begin
+        case (sh_type)
+            2'b00: out = in << shamt;                    // logical left shift
+            2'b01: out = in >> shamt;                    // logical right shift
+            2'b10: out = $signed(in) >>> shamt;          // arithmetic right shift
+            default: out = in;
+        endcase
+    end
+
+endmodule

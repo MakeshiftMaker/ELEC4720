@@ -1,0 +1,47 @@
+# Loading project mips_processor
+# Compile of chatgpt_mips.sv failed with 1 errors.
+# Compile of multiplexer.sv was successful.
+# Compile of mips.sv failed with 2 errors.
+# Compile of mips.sv failed with 2 errors.
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv failed with 1 errors.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# Compile of chatgpt_mips.sv failed with 1 errors.
+# Compile of multiplexer.sv was successful with warnings.
+# 12 compiles, 2 failed with 2 errors.
+# Compile of mips.sv failed with 1 errors.
+# Compile of mips.sv was successful.
+# Compile of signExtend.sv was successful.
+# Compile of mips.sv failed with 2 errors.
+# Compile of mips.sv failed with 1 errors.
+# Compile of mips.sv failed with 1 errors.
+# Compile of mips.sv was successful.
+# Compile of mips.sv failed with 3 errors.
+# Compile of mips.sv failed with 2 errors.
+# Compile of mips.sv failed with 1 errors.
+# Compile of mips.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv failed with 3 errors.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# Compile of chatgpt_mips.sv failed with 1 errors.
+# Compile of multiplexer.sv was successful with warnings.
+# Compile of signExtend.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of shifter.sv was successful.
+# 15 compiles, 2 failed with 4 errors.
+# Compile of adder.sv was successful.
