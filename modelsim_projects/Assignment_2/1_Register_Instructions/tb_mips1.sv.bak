@@ -1,12 +1,13 @@
-module mips_tb;
+`timescale 1ns/1ps
+
+module tb_mips1;
+
     logic clk;
     logic reset;
-
-    // outputs from mips
     logic [31:0] pc_out;
     logic [31:0] rom_data;
 
-    // DUT (device under test)
+    // Instantiate the MIPS module
     mips dut (
         .clk(clk),
         .reset(reset),
@@ -14,24 +15,33 @@ module mips_tb;
         .rom_data(rom_data)
     );
 
-    // clock generator
-    initial clk = 0;
-    always #5 clk = ~clk;
-
-    // stimulus
+    // Clock generation: 10ns period
     initial begin
-        $display("Time   PC         ROM Data");
-        $display("---------------------------");
-
-        reset = 1;
-        #12 reset = 0; // release reset
-
-        // run for a while
-        repeat (10) begin
-            @(posedge clk);
-            $display("%4t   %h   %h", $time, pc_out, rom_data);
-        end
-
-        $finish;
+	clk = 0;
+	forever #5 clk = ~clk;
     end
+    // Simulation setup
+    initial begin
+        $display("Starting simulation...");
+
+        // Apply reset
+        reset = 1;
+        @(posedge clk);
+        reset = 0;
+	$display("Reset Released...");
+
+        // Run for enough cycles to execute all instructions
+        repeat (20) @(posedge clk);
+
+        $display("Simulation finished.");
+        $stop;
+    end
+
+    // Monitor outputs
+    initial begin
+        $display("Time\tPC\t\tInstruction");
+        $monitor("%0t\t%h\t%h", $time, pc_out, rom_data);
+    end
+
 endmodule
+

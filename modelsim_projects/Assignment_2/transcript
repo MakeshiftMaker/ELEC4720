@@ -1,47 +1,1036 @@
 # Loading project mips_processor
-# Compile of chatgpt_mips.sv failed with 1 errors.
-# Compile of multiplexer.sv was successful.
-# Compile of mips.sv failed with 2 errors.
-# Compile of mips.sv failed with 2 errors.
+# Load canceled
 # Compile of ByteIM.sv was successful.
 # Compile of regfile.sv was successful.
 # Compile of ROM.sv was successful.
-# Compile of mips.sv failed with 1 errors.
+# Compile of mips.sv was successful.
 # Compile of PC.sv was successful.
 # Compile of alu.sv was successful.
 # Compile of instruction_classifier.sv was successful.
 # Compile of tb_alu.sv was successful.
 # Compile of tb_instruction_classifier.sv was successful.
 # Compile of tb_mips1.sv was successful.
-# Compile of chatgpt_mips.sv failed with 1 errors.
-# Compile of multiplexer.sv was successful with warnings.
-# 12 compiles, 2 failed with 2 errors.
-# Compile of mips.sv failed with 1 errors.
-# Compile of mips.sv was successful.
-# Compile of signExtend.sv was successful.
-# Compile of mips.sv failed with 2 errors.
-# Compile of mips.sv failed with 1 errors.
-# Compile of mips.sv failed with 1 errors.
-# Compile of mips.sv was successful.
-# Compile of mips.sv failed with 3 errors.
-# Compile of mips.sv failed with 2 errors.
-# Compile of mips.sv failed with 1 errors.
-# Compile of mips.sv was successful.
-# Compile of alu.sv was successful.
-# Compile of ByteIM.sv was successful.
-# Compile of regfile.sv was successful.
-# Compile of ROM.sv was successful.
-# Compile of mips.sv failed with 3 errors.
-# Compile of PC.sv was successful.
-# Compile of alu.sv was successful.
-# Compile of instruction_classifier.sv was successful.
-# Compile of tb_alu.sv was successful.
-# Compile of tb_instruction_classifier.sv was successful.
-# Compile of tb_mips1.sv was successful.
-# Compile of chatgpt_mips.sv failed with 1 errors.
 # Compile of multiplexer.sv was successful with warnings.
 # Compile of signExtend.sv was successful.
 # Compile of adder.sv was successful.
 # Compile of shifter.sv was successful.
-# 15 compiles, 2 failed with 4 errors.
+# Compile of controlUnit.sv was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 11:50:34 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	00e35020
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 11:55:18 on Oct 20,2025, Elapsed time: 0:04:44
+# Errors: 0, Warnings: 11
+# Load canceled
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# Compile of multiplexer.sv was successful with warnings.
+# Compile of signExtend.sv was successful.
 # Compile of adder.sv was successful.
+# Compile of shifter.sv was successful.
+# Compile of controlUnit.sv was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 11:55:34 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	00e35020
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 11:56:35 on Oct 20,2025, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 11
+# Load canceled
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# Compile of multiplexer.sv was successful with warnings.
+# Compile of signExtend.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of shifter.sv was successful.
+# Compile of controlUnit.sv was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 11:56:49 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	xxxxxxxx	xxxxxxxx
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 11:58:10 on Oct 20,2025, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 11
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# Compile of multiplexer.sv was successful with warnings.
+# Compile of signExtend.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of shifter.sv was successful.
+# Compile of controlUnit.sv was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 11:58:17 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	00e35020
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 11:59:41 on Oct 20,2025, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 11
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv failed with 2 errors.
+# Compile of multiplexer.sv was successful with warnings.
+# Compile of signExtend.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of shifter.sv was successful.
+# Compile of controlUnit.sv was successful.
+# 15 compiles, 1 failed with 2 errors.
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 12:00:44 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+quit -sim
+# End time: 12:00:52 on Oct 20,2025, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 11
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv failed with 2 errors.
+# Compile of multiplexer.sv was successful with warnings.
+# Compile of signExtend.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of shifter.sv was successful.
+# Compile of controlUnit.sv was successful.
+# 15 compiles, 1 failed with 2 errors.
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv failed with 1 errors.
+# Compile of multiplexer.sv was successful with warnings.
+# Compile of signExtend.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of shifter.sv was successful.
+# Compile of controlUnit.sv was successful.
+# 15 compiles, 1 failed with 1 error.
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# Compile of multiplexer.sv was successful with warnings.
+# Compile of signExtend.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of shifter.sv was successful.
+# Compile of controlUnit.sv was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 12:03:01 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	00e35020
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# Compile of multiplexer.sv was successful with warnings.
+# Compile of signExtend.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of shifter.sv was successful.
+# Compile of controlUnit.sv was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.tb_mips1
+# End time: 12:04:57 on Oct 20,2025, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 14
+# vsim work.tb_mips1 
+# Start time: 12:04:57 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	00e35020
+# Reset Released...
+run
+run
+run
+# 15	00014080	00e35020
+run
+run
+# 25	00028100	00e35020
+run
+run
+# 35	0003c180	00e35020
+run
+run
+# 45	00050200	00e35020
+run
+run
+# 55	00064280	00e35020
+run
+run
+# 65	00078300	00e35020
+run
+run
+# 75	0008c380	00e35020
+run
+run
+# 85	000a0400	00e35020
+run
+run
+# 95	000b4480	00e35020
+run
+run
+# 105	000c8500	00e35020
+run
+run
+# 115	000dc580	00e35020
+run
+run
+# 125	000f0600	00e35020
+run
+run
+# 135	00104680	00e35020
+run
+run
+# 145	00118700	00e35020
+run
+run
+# 155	0012c780	00e35020
+run
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+run
+# 165	00140800	00e35020
+run
+run
+# 175	00154880	00e35020
+run
+run
+# 185	00168900	00e35020
+run
+run
+# 195	0017c980	00e35020
+run
+# Simulation finished.
+# ** Note: $stop    : /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv(35)
+#    Time: 205 ps  Iteration: 1  Instance: /tb_mips1
+# Break in Module tb_mips1 at /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv line 35
+run
+# 205	00190a00	00e35020
+vsim work.tb_mips1
+# End time: 12:05:49 on Oct 20,2025, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 10
+# vsim work.tb_mips1 
+# Start time: 12:05:49 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/dut/ALU_inst/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	00e35020
+# Reset Released...
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+run
+run
+run
+# 15	00014080	00e35020
+run
+run
+# 25	00028100	00e35020
+run
+run
+# 35	0003c180	00e35020
+run
+run
+# 45	00050200	00e35020
+run
+run
+# 55	00064280	00e35020
+run
+run
+# 65	00078300	00e35020
+run
+run
+# 75	0008c380	00e35020
+quit -sim
+# End time: 12:08:53 on Oct 20,2025, Elapsed time: 0:03:04
+# Errors: 0, Warnings: 10
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 12:08:59 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/dut/CU/*
+add wave -position end sim:/tb_mips1/dut/ALU_inst/*
+add wave -position end sim:/tb_mips1/dut/regfile_inst/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	20080005
+# Reset Released...
+run
+run
+run
+# 15	00000014	01095825
+run
+run
+# 25	000160a8	01095020
+run
+run
+# 35	0002a128	01095020
+run
+run
+# 45	0003e1a8	01095020
+run
+run
+# 55	00052228	01095020
+run
+run
+# 65	000662a8	01095020
+quit -sim
+# End time: 12:13:01 on Oct 20,2025, Elapsed time: 0:04:02
+# Errors: 0, Warnings: 10
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 12:13:06 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/dut/CU/*
+add wave -position end sim:/tb_mips1/dut/ALU_inst/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	00000022
+# Reset Released...
+run
+run
+run
+# 15	00000088	0000005a
+run
+run
+# 25	000001f0	xxxxxxxx
+run
+run
+# 35	xxxxxxxx	xxxxxxxx
+run
+run
+run
+run
+run
+run
+add wave -position end sim:/tb_mips1/dut/regfile_inst/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	00000022
+# Reset Released...
+run
+run
+run
+# 15	00000088	0000005a
+run
+run
+# 25	000001f0	xxxxxxxx
+run
+run
+# 35	xxxxxxxx	xxxxxxxx
+run
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	22675a0f
+# Reset Released...
+run
+run
+run
+# 15	0001683c	xxxxxxxx
+run
+run
+# 25	xxxxxxxx	xxxxxxxx
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/dut/CU/*
+add wave -position end sim:/tb_mips1/dut/regfile_inst/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	22675a0f
+# Reset Released...
+run
+run
+run
+# 15	0001683c	xxxxxxxx
+run
+run
+# 25	xxxxxxxx	xxxxxxxx
+add wave -position end sim:/tb_mips1/dut/regfile_inst/#ALWAYS#7/*
+add wave -position end sim:/tb_mips1/dut/regfile_inst/#ASSIGN#9/*
+add wave -position end sim:/tb_mips1/dut/regfile_inst/#ASSIGN#10/*
+quit -sim
+# End time: 12:32:20 on Oct 20,2025, Elapsed time: 0:19:14
+# Errors: 0, Warnings: 10
+# Compile of ByteIM.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of instruction_classifier.sv was successful.
+# Compile of tb_alu.sv was successful.
+# Compile of tb_instruction_classifier.sv was successful.
+# Compile of tb_mips1.sv was successful.
+# Compile of multiplexer.sv was successful with warnings.
+# Compile of signExtend.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of shifter.sv was successful.
+# Compile of controlUnit.sv was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.tb_mips1
+# vsim work.tb_mips1 
+# Start time: 12:32:53 on Oct 20,2025
+# Loading sv_std.std
+# Loading work.tb_mips1
+# Loading work.mips
+# Loading work.ControlUnit
+# Loading work.PC
+# Loading work.ByteIM
+# Loading work.ROM
+# Loading work.instruction_classifier
+# Loading work.multiplexer
+# Loading work.regfile
+# Loading work.signExtend
+# Loading work.shifter
+# Loading work.adder
+# Loading work.alu
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+add wave -position end sim:/tb_mips1/dut/regfile_inst/*
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	22675a0f
+# Reset Released...
+run
+run
+add wave -position end sim:/tb_mips1/dut/ALU_inst/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	22675a0f
+# Reset Released...
+run
+run
+run
+# 15	0001683c	xxxxxxxx
+add wave -position end sim:/tb_mips1/dut/CU/*
+run
+run
+# 25	xxxxxxxx	xxxxxxxx
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'Ad'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/rom_inst File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 51
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ic'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/ic File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 57
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(57): [TFMPC] - Missing connection for port 'opcode_out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'selected_output'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/writeReg_multiplexer File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 68
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DataMemory'.  Expected 8, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'WA'. The port definition is at: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips1/dut/DataMemory File: /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv Line: 131
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA1'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RA2'.
+# ** Warning: (vsim-3722) /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv(131): [TFMPC] - Missing connection for port 'RD2'.
+run
+# Starting simulation...
+# Time	PC		Instruction
+# 0	00000000	22675a0f
+# Reset Released...
+run
+run
+run
+# 15	0001683c	xxxxxxxx
+run
+# End time: 12:59:03 on Oct 20,2025, Elapsed time: 0:26:10
+# Errors: 0, Warnings: 10

@@ -5,8 +5,39 @@ module mips(
     output logic [31:0] pc_out,
     output logic [31:0] rom_data
 );
+    logic Zero;     // output from ALU
+    logic Branch;   // output from your (yet-to-be-implemented) control unit
+    logic PCSrc;    // final ANDed signal for PC mux
 
     assign PCSrc = Branch & Zero;
+
+        // Control signals
+    logic MemtoReg;
+    logic MemWrite;
+    logic [3:0] ALUControl;
+    logic ALUSrc;
+    logic RegDst;
+    logic RegWrite;
+
+    // Internal datapath signals
+    logic [31:0] RD1, RD2, SrcB, ALUResult, ReadData, Result;
+    logic [31:0] SignImm, shift_out, PCBranch, PC1;
+    logic [4:0]  writeReg;
+
+
+    // Control Unit instance
+    ControlUnit CU (
+	.opcode    (rom_data[31:26]),  // instruction[31:26]
+    	.funct     (rom_data[5:0]),    // instruction[5:0]
+	.MemtoReg  (MemtoReg),
+	.MemWrite  (MemWrite),
+	.Branch    (Branch),
+	.ALUControl(ALUControl),
+	.ALUSrc    (ALUSrc),
+	.RegDst    (RegDst),   // goes to your writeReg multiplexer select
+	.RegWrite  (RegWrite)
+);
+
 
     // instantiate the program counter
     PC pc_inst (
@@ -21,6 +52,7 @@ module mips(
         .Ad(pc_out),
         .Dout(rom_data)
     );
+
     logic R, B1, J, B2, I, F, M;
     instruction_classifier ic (
 	.opcode(rom_data[31:26]),
@@ -35,7 +67,7 @@ module mips(
 
     multiplexer#(.N(2), .WIDTH(4)) writeReg_multiplexer(
 	.input_bits({rom_data[20:16], rom_data[15:11]}),
-	.selection(write_reg_sel), //output from ControlUnit
+	.selection(RegDst), //output from ControlUnit
 	.selected_output(writeReg) //output to regfile
     );
 
@@ -48,23 +80,23 @@ module mips(
     multiplexer#(.N(2), .WIDTH(32)) PC_multiplexer(
 	.input_bits({pc_out, PCBranch}),
 	.selection(PCSrc),
-	.selection_output(PC1)
+	.selected_output(PC1)
 );
 
     multiplexer#(.N(2), .WIDTH(32)) Writeback_multiplexer(
 	.input_bits({ALUResult, ReadData}),
 	.selection(MemtoReg),
-	.selection_output(Result)
+	.selected_output(Result)
 );
 
     regfile regfile_inst(
-	.A1(rom_data[25:21]),
-	.A2(rom_data[20:16]),
+	.RA1(rom_data[25:21]),
+	.RA2(rom_data[20:16]),
 	.RD1(RD1),
 	.RD2(RD2),
 	.WA(writeReg),
 	.WE(RegWrite),
-	.WD(Result)
+	.WD(Result),
 	.clk(clk)
     );
 
@@ -75,7 +107,7 @@ module mips(
 
     shifter PCBranchShifter(
 	.in(SignImm),
-	.shamt(2),
+	.shamt(5'd2),
 	.sh_type(2'b00),
 	.out(shift_out)
 
@@ -92,7 +124,8 @@ module mips(
 	.B(SrcB),
 	.Zero(Zero), //add ALU zero output
 	.Y(ALUResult),
-	.F(ALUControl) // control bits for alu to choose operation
+	.F(ALUControl), // control bits for alu to choose operation
+	.OV(OV)
 );
 
     regfile DataMemory(

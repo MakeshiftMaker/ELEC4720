@@ -1,0 +1,138 @@
+# Current time Mon Oct 20 11:47:28 2025
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = "linuxaloem"
+# Signature = fa4d3e95ccc4dcaa70644b276588aa2d
+# 0    0xf7dd2ee5: '<unknown (@0xf7dd2ee5)>'
+# 1    0x08dd7442: '<unknown (@0x8dd7442)>'
+# 2    0x08304e9c: '<unknown (@0x8304e9c)>'
+# 3    0xf682175e: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv:5'
+# 4    0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 5    0x0853e003: '<unknown (@0x853e003)>'
+# 6    0xf682077c: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv:3'
+# 7    0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 8    0x0853e003: '<unknown (@0x853e003)>'
+# 9    0xf681cf9e: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv:86'
+# 10   0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 11   0x0853e003: '<unknown (@0x853e003)>'
+# 12   0xf681bd47: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv:42'
+# 13   0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 14   0x0853e25a: '<unknown (@0x853e25a)>'
+# 15   0x085e859b: '<unknown (@0x85e859b)>'
+# 16   0x085d22c1: '<unknown (@0x85d22c1)>'
+# 17   0x085d394d: '<unknown (@0x85d394d)>'
+# 18   0x08aa40c2: '<unknown (@0x8aa40c2)>'
+# 19   0x08a9a3b9: '<unknown (@0x8a9a3b9)>'
+# 20   0x092365cb: '<unknown (@0x92365cb)>'
+# 21   0x09235bba: '<unknown (@0x9235bba)>'
+# 22   0x0923b143: '<unknown (@0x923b143)>'
+# 23   0x0923b25a: '<unknown (@0x923b25a)>'
+# 24   0x0923c901: '<unknown (@0x923c901)>'
+# 25   0x0923cc76: '<unknown (@0x923cc76)>'
+# 26   0x08d20173: '<unknown (@0x8d20173)>'
+# 27   0x092e4977: '<unknown (@0x92e4977)>'
+# 28   0x0933ec3c: '<unknown (@0x933ec3c)>'
+# 29   0x09341a98: '<unknown (@0x9341a98)>'
+# 30   0x092fde68: '<unknown (@0x92fde68)>'
+# 31   0x092fe175: '<unknown (@0x92fe175)>'
+# 32   0x090ec6c0: '<unknown (@0x90ec6c0)>'
+# 33   0x0879fb79: '<unknown (@0x879fb79)>'
+# 34   0x0863aebb: '<unknown (@0x863aebb)>'
+# End of Stack Trace
+
+
+# Current time Mon Oct 20 11:48:46 2025
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = "linuxaloem"
+# Signature = fa4d3e95ccc4dcaa70644b276588aa2d
+# 0    0xf7dd2ee5: '<unknown (@0xf7dd2ee5)>'
+# 1    0x08dd7442: '<unknown (@0x8dd7442)>'
+# 2    0x08304e9c: '<unknown (@0x8304e9c)>'
+# 3    0xf682175e: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv:5'
+# 4    0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 5    0x0853e003: '<unknown (@0x853e003)>'
+# 6    0xf682077c: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv:3'
+# 7    0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 8    0x0853e003: '<unknown (@0x853e003)>'
+# 9    0xf681cf9e: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv:86'
+# 10   0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 11   0x0853e003: '<unknown (@0x853e003)>'
+# 12   0xf681bd47: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv:42'
+# 13   0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 14   0x0853e25a: '<unknown (@0x853e25a)>'
+# 15   0x085e859b: '<unknown (@0x85e859b)>'
+# 16   0x085d22c1: '<unknown (@0x85d22c1)>'
+# 17   0x085d394d: '<unknown (@0x85d394d)>'
+# 18   0x08aa40c2: '<unknown (@0x8aa40c2)>'
+# 19   0x08a9a3b9: '<unknown (@0x8a9a3b9)>'
+# 20   0x092365cb: '<unknown (@0x92365cb)>'
+# 21   0x09235bba: '<unknown (@0x9235bba)>'
+# 22   0x0923b143: '<unknown (@0x923b143)>'
+# 23   0x0923b25a: '<unknown (@0x923b25a)>'
+# 24   0x0923c901: '<unknown (@0x923c901)>'
+# 25   0x0923cc76: '<unknown (@0x923cc76)>'
+# 26   0x08d20173: '<unknown (@0x8d20173)>'
+# 27   0x092e4977: '<unknown (@0x92e4977)>'
+# 28   0x0933ec3c: '<unknown (@0x933ec3c)>'
+# 29   0x09341a98: '<unknown (@0x9341a98)>'
+# 30   0x092fde68: '<unknown (@0x92fde68)>'
+# 31   0x092fe175: '<unknown (@0x92fe175)>'
+# 32   0x090ec6c0: '<unknown (@0x90ec6c0)>'
+# 33   0x0879fb79: '<unknown (@0x879fb79)>'
+# 34   0x0863aebb: '<unknown (@0x863aebb)>'
+# End of Stack Trace
+
+
+# Current time Mon Oct 20 11:49:40 2025
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = "linuxaloem"
+# Signature = fa4d3e95ccc4dcaa70644b276588aa2d
+# 0    0xf7dd2ee5: '<unknown (@0xf7dd2ee5)>'
+# 1    0x08dd7442: '<unknown (@0x8dd7442)>'
+# 2    0x08304e9c: '<unknown (@0x8304e9c)>'
+# 3    0xf682175e: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv:5'
+# 4    0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 5    0x0853e003: '<unknown (@0x853e003)>'
+# 6    0xf682077c: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv:3'
+# 7    0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 8    0x0853e003: '<unknown (@0x853e003)>'
+# 9    0xf681cf9e: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv:86'
+# 10   0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 11   0x0853e003: '<unknown (@0x853e003)>'
+# 12   0xf681bd47: '/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv:42'
+# 13   0x0831d7d9: '<unknown (@0x831d7d9)>'
+# 14   0x0853e25a: '<unknown (@0x853e25a)>'
+# 15   0x085e859b: '<unknown (@0x85e859b)>'
+# 16   0x085d22c1: '<unknown (@0x85d22c1)>'
+# 17   0x085d394d: '<unknown (@0x85d394d)>'
+# 18   0x08aa40c2: '<unknown (@0x8aa40c2)>'
+# 19   0x08a9a3b9: '<unknown (@0x8a9a3b9)>'
+# 20   0x092365cb: '<unknown (@0x92365cb)>'
+# 21   0x09235bba: '<unknown (@0x9235bba)>'
+# 22   0x0923b143: '<unknown (@0x923b143)>'
+# 23   0x0923b25a: '<unknown (@0x923b25a)>'
+# 24   0x0923c901: '<unknown (@0x923c901)>'
+# 25   0x0923cc76: '<unknown (@0x923cc76)>'
+# 26   0x08d20173: '<unknown (@0x8d20173)>'
+# 27   0x092e4977: '<unknown (@0x92e4977)>'
+# 28   0x0933ec3c: '<unknown (@0x933ec3c)>'
+# 29   0x09341a98: '<unknown (@0x9341a98)>'
+# 30   0x092fde68: '<unknown (@0x92fde68)>'
+# 31   0x092fe175: '<unknown (@0x92fe175)>'
+# 32   0x090ec6c0: '<unknown (@0x90ec6c0)>'
+# 33   0x0879fb79: '<unknown (@0x879fb79)>'
+# 34   0x0863aebb: '<unknown (@0x863aebb)>'
+# End of Stack Trace
+
+

@@ -1,6 +1,6 @@
 module regfile(
 input logic clk, WE,
-input logic [4:0] A1, A2, WA,
+input logic [4:0] RA1, RA2, WA,
 input logic [31:0] WD,
 output logic [31:0] RD1, RD2);
 logic [31:0] rf[31:0];
