@@ -10,11 +10,15 @@ module alu #(
 );
 
     // Signed versions of operands for signed operations
-    logic signed [N-1:0] As = $signed(A);
-    logic signed [N-1:0] Bs = $signed(B);
+    logic signed [N-1:0] As;
+    logic signed [N-1:0] Bs;
     logic [N:0] sum; // for unsigned operations carry/overflow detection
 
     always_comb begin
+        As  = $signed(A);
+        Bs  = $signed(B);
+        sum = '0;
+
         // Defaults
         Y  = '0;
         OV = 1'b0;

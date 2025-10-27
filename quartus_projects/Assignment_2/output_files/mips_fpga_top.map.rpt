@@ -1,0 +1,1171 @@
+Analysis & Synthesis report for mips_fpga_top
+Mon Oct 27 11:08:09 2025
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: button_debouncer:reset_db
+ 12. Parameter Settings for User Entity Instance: button_debouncer:step_db
+ 13. Parameter Settings for User Entity Instance: mips:cpu_core|PC:pc_inst
+ 14. Parameter Settings for User Entity Instance: mips:cpu_core|ByteIM:rom_inst
+ 15. Parameter Settings for User Entity Instance: mips:cpu_core|ByteIM:rom_inst|ROM:wordrom
+ 16. Parameter Settings for User Entity Instance: mips:cpu_core|multiplexer:writeReg_multiplexer
+ 17. Parameter Settings for User Entity Instance: mips:cpu_core|multiplexer:ALU_srcB_multiplexer
+ 18. Parameter Settings for User Entity Instance: mips:cpu_core|multiplexer:Writeback_multiplexer
+ 19. Parameter Settings for User Entity Instance: mips:cpu_core|adder:PCPlus4_adder
+ 20. Parameter Settings for User Entity Instance: mips:cpu_core|adder:PCBranch_adder
+ 21. Parameter Settings for User Entity Instance: mips:cpu_core|alu:ALU_inst
+ 22. Parameter Settings for User Entity Instance: mips:cpu_core|dataMemory:data_mem
+ 23. Port Connectivity Checks: "mips:cpu_core|alu:ALU_inst"
+ 24. Port Connectivity Checks: "mips:cpu_core|adder:PCBranch_adder"
+ 25. Port Connectivity Checks: "mips:cpu_core|adder:PCPlus4_adder"
+ 26. Port Connectivity Checks: "mips:cpu_core|ControlUnit:CU|instruction_classifier:opcode_decoder"
+ 27. Port Connectivity Checks: "mips:cpu_core"
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Oct 27 11:08:08 2025       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; mips_fpga_top                               ;
+; Top-level Entity Name           ; mips_fpga_top                               ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 8746                                        ;
+; Total pins                      ; 51                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC5C6F27C7     ;                    ;
+; Top-level entity name                                                           ; mips_fpga_top      ; mips_fpga_top      ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 22          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.02        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.2%      ;
+;     Processor 5            ;   0.2%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processor 8            ;   0.1%      ;
+;     Processors 9-16        ;   0.1%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                     ;
++--------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                         ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                         ; Library ;
++--------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
+; ../../modelsim_projects/Assignment_2/1_Register_Instructions/program.dat ; yes             ; User Unspecified File        ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/program.dat ;         ;
+; ../../modelsim_projects/Assignment_2/modules/signExtend.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/signExtend.sv               ;         ;
+; ../../modelsim_projects/Assignment_2/modules/multiplexer.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/multiplexer.sv              ;         ;
+; ../../modelsim_projects/Assignment_2/modules/instruction_classifier.sv   ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/instruction_classifier.sv   ;         ;
+; ../../modelsim_projects/Assignment_2/modules/hex7seg.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/hex7seg.sv                  ;         ;
+; ../../modelsim_projects/Assignment_2/modules/edge_pulse.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/edge_pulse.sv               ;         ;
+; ../../modelsim_projects/Assignment_2/modules/dataMemory.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/dataMemory.sv               ;         ;
+; ../../modelsim_projects/Assignment_2/modules/controlUnit.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/controlUnit.sv              ;         ;
+; ../../modelsim_projects/Assignment_2/modules/button_debouncer.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/button_debouncer.sv         ;         ;
+; ../../modelsim_projects/Assignment_2/modules/alu.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/alu.sv                      ;         ;
+; ../../modelsim_projects/Assignment_2/modules/adder.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/adder.sv                    ;         ;
+; ../../modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv      ;         ;
+; ../../modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv  ;         ;
+; ../../modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv       ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv       ;         ;
+; ../../modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv   ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv   ;         ;
+; ../../modelsim_projects/Assignment_2/mips.sv                             ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv                             ;         ;
+; ../../modelsim_projects/Assignment_2/mips_fpga_top.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips_fpga_top.sv                    ;         ;
++--------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 6142                       ;
+;                                             ;                            ;
+; Combinational ALUT usage for logic          ; 4078                       ;
+;     -- 7 input functions                    ; 36                         ;
+;     -- 6 input functions                    ; 3111                       ;
+;     -- 5 input functions                    ; 220                        ;
+;     -- 4 input functions                    ; 496                        ;
+;     -- <=3 input functions                  ; 215                        ;
+;                                             ;                            ;
+; Dedicated logic registers                   ; 8746                       ;
+;                                             ;                            ;
+; I/O pins                                    ; 51                         ;
+;                                             ;                            ;
+; Total DSP Blocks                            ; 0                          ;
+;                                             ;                            ;
+; Maximum fan-out node                        ; edge_pulse:step_edge|pulse ;
+; Maximum fan-out                             ; 8702                       ;
+; Total fan-out                               ; 57140                      ;
+; Average fan-out                             ; 4.42                       ;
++---------------------------------------------+----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                   ;
++--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Entity Name            ; Library Name ;
++--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+------------------------+--------------+
+; |mips_fpga_top                                   ; 4078 (311)          ; 8746 (0)                  ; 0                 ; 0          ; 51   ; 0            ; |mips_fpga_top                                                                    ; mips_fpga_top          ; work         ;
+;    |button_debouncer:reset_db|                   ; 24 (24)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|button_debouncer:reset_db                                          ; button_debouncer       ; work         ;
+;    |button_debouncer:step_db|                    ; 24 (24)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|button_debouncer:step_db                                           ; button_debouncer       ; work         ;
+;    |edge_pulse:step_edge|                        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|edge_pulse:step_edge                                               ; edge_pulse             ; work         ;
+;    |hex7seg:h0|                                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|hex7seg:h0                                                         ; hex7seg                ; work         ;
+;    |hex7seg:h1|                                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|hex7seg:h1                                                         ; hex7seg                ; work         ;
+;    |hex7seg:h2|                                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|hex7seg:h2                                                         ; hex7seg                ; work         ;
+;    |hex7seg:h3|                                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|hex7seg:h3                                                         ; hex7seg                ; work         ;
+;    |mips:cpu_core|                               ; 3690 (48)           ; 8702 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core                                                      ; mips                   ; work         ;
+;       |ByteIM:rom_inst|                          ; 28 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|ByteIM:rom_inst                                      ; ByteIM                 ; work         ;
+;          |ROM:wordrom|                           ; 28 (28)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|ByteIM:rom_inst|ROM:wordrom                          ; ROM                    ; work         ;
+;       |ControlUnit:CU|                           ; 13 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|ControlUnit:CU                                       ; ControlUnit            ; work         ;
+;          |instruction_classifier:opcode_decoder| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|ControlUnit:CU|instruction_classifier:opcode_decoder ; instruction_classifier ; work         ;
+;       |PC:pc_inst|                               ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|PC:pc_inst                                           ; PC                     ; work         ;
+;       |adder:PCBranch_adder|                     ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|adder:PCBranch_adder                                 ; adder                  ; work         ;
+;       |adder:PCPlus4_adder|                      ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|adder:PCPlus4_adder                                  ; adder                  ; work         ;
+;       |alu:ALU_inst|                             ; 126 (126)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|alu:ALU_inst                                         ; alu                    ; work         ;
+;       |dataMemory:data_mem|                      ; 3038 (3038)         ; 8192 (8192)               ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|dataMemory:data_mem                                  ; dataMemory             ; work         ;
+;       |multiplexer:ALU_srcB_multiplexer|         ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|multiplexer:ALU_srcB_multiplexer                     ; multiplexer            ; work         ;
+;       |multiplexer:Writeback_multiplexer|        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|multiplexer:Writeback_multiplexer                    ; multiplexer            ; work         ;
+;       |regfile:regfile_inst|                     ; 309 (309)           ; 480 (480)                 ; 0                 ; 0          ; 0    ; 0            ; |mips_fpga_top|mips:cpu_core|regfile:regfile_inst                                 ; regfile                ; work         ;
++--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                             ;
++-----------------------------------------------+------------------------------------------------+
+; Register name                                 ; Reason for Removal                             ;
++-----------------------------------------------+------------------------------------------------+
+; mips:cpu_core|PC:pc_inst|PC_out[0]            ; Merged with mips:cpu_core|PC:pc_inst|PC_out[1] ;
+; mips:cpu_core|PC:pc_inst|PC_out[1]            ; Stuck at GND due to stuck port data_in         ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][16]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][16]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][16]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][16]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][16]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][16]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][16] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][0]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][0]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][0]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][0]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][0]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][0]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][0]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][17]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][17]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][17]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][17]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][17]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][17]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][17] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][1]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][1]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][1]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][1]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][1]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][1]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][1]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][2]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][2]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][2]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][2]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][2]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][2]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][2]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][18]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][18]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][18]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][18]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][18]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][18]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][18] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][3]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][3]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][3]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][3]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][3]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][3]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][3]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][19]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][19]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][19]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][19]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][19]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][19]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][19] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][4]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][4]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][4]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][4]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][4]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][4]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][4]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][20]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][20]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][20]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][20]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][20]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][20]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][20] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][5]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][5]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][5]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][5]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][5]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][5]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][5]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][21]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][21]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][21]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][21]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][21]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][21]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][21] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][6]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][6]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][6]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][6]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][6]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][6]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][6]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][22]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][22]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][22]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][22]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][22]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][22]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][22] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][7]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][7]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][7]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][7]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][7]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][7]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][7]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][23]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][23]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][23]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][23]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][23]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][23]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][23] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][8]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][8]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][8]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][8]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][8]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][8]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][8]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][24]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][24]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][24]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][24]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][24]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][24]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][24] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][9]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][9]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][9]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][9]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][9]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][9]   ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][9]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][25]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][25]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][25]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][25]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][25]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][25]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][25] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][10]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][10]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][10]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][10]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][10]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][10]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][10] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][26]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][26]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][26]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][26]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][26]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][26]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][26] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][11]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][11]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][11]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][11]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][11]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][11]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][11] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][27]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][27]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][27]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][27]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][27]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][27]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][27] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][12]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][12]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][12]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][12]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][12]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][12]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][12] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][28]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][28]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][28]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][28]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][28]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][28]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][28] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][13]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][13]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][13]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][13]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][13]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][13]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][13] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][29]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][29]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][29]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][29]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][29]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][29]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][29] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][14]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][14]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][14]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][14]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][14]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][14]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][14] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][30]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][30]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][30]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][30]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][30]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][30]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][30] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][15]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][15]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][15]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][15]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][15]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][15]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][15] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[4][31]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[1][31]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[5][31]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[6][31]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[3][31]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[7][31]  ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[15][31] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[22][31] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[23][31] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[24][31] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[25][31] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[26][31] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[27][31] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[28][31] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[29][31] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[30][31] ; Stuck at GND due to stuck port clock_enable    ;
+; mips:cpu_core|regfile:regfile_inst|rf[31][31] ; Stuck at GND due to stuck port clock_enable    ;
+; Total Number of Removed Registers = 546       ;                                                ;
++-----------------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 8746  ;
+; Number of registers using Synchronous Clear  ; 8237  ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 30    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 8672  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |mips_fpga_top|mips:cpu_core|PC:pc_inst|PC_out[27]        ;
+; 3:1                ; 17 bits   ; 34 LEs        ; 34 LEs               ; 0 LEs                  ; Yes        ; |mips_fpga_top|mips:cpu_core|PC:pc_inst|PC_out[15]        ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |mips_fpga_top|button_debouncer:reset_db|cnt[17]          ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |mips_fpga_top|button_debouncer:step_db|cnt[0]            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |mips_fpga_top|mips:cpu_core|ControlUnit:CU|RegWrite      ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |mips_fpga_top|mips:cpu_core|regfile:regfile_inst|RD1[20] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; No         ; |mips_fpga_top|mips:cpu_core|alu:ALU_inst|Add0            ;
+; 16:1               ; 31 bits   ; 310 LEs       ; 124 LEs              ; 186 LEs                ; No         ; |mips_fpga_top|mips:cpu_core|alu:ALU_inst|Mux13           ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |mips_fpga_top|mips:cpu_core|alu:ALU_inst|Add0            ;
+; 13:1               ; 32 bits   ; 256 LEs       ; 256 LEs              ; 0 LEs                  ; No         ; |mips_fpga_top|mips:cpu_core|regfile:regfile_inst|RD2[20] ;
+; 68:1               ; 2 bits    ; 90 LEs        ; 90 LEs               ; 0 LEs                  ; No         ; |mips_fpga_top|display_word[1]                            ;
+; 68:1               ; 14 bits   ; 630 LEs       ; 630 LEs              ; 0 LEs                  ; No         ; |mips_fpga_top|display_word[8]                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: button_debouncer:reset_db ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; COUNTER_BITS   ; 18    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: button_debouncer:step_db ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; COUNTER_BITS   ; 18    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu_core|PC:pc_inst ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; m              ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu_core|ByteIM:rom_inst ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; m              ; 8     ; Signed Integer                                    ;
+; n              ; 2     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu_core|ByteIM:rom_inst|ROM:wordrom ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; m              ; 6     ; Signed Integer                                                ;
+; p              ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu_core|multiplexer:writeReg_multiplexer ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; N              ; 2     ; Signed Integer                                                     ;
+; WIDTH          ; 5     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu_core|multiplexer:ALU_srcB_multiplexer ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; N              ; 2     ; Signed Integer                                                     ;
+; WIDTH          ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu_core|multiplexer:Writeback_multiplexer ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 2     ; Signed Integer                                                      ;
+; WIDTH          ; 32    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu_core|adder:PCPlus4_adder ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu_core|adder:PCBranch_adder ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu_core|alu:ALU_inst ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; N              ; 32    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mips:cpu_core|dataMemory:data_mem ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ADDR_WIDTH     ; 8     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mips:cpu_core|alu:ALU_inst"                                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; OV   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "mips:cpu_core|adder:PCBranch_adder" ;
++---------+-------+----------+-----------------------------------+
+; Port    ; Type  ; Severity ; Details                           ;
++---------+-------+----------+-----------------------------------+
+; B[1..0] ; Input ; Info     ; Stuck at GND                      ;
++---------+-------+----------+-----------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "mips:cpu_core|adder:PCPlus4_adder" ;
++----------+-------+----------+---------------------------------+
+; Port     ; Type  ; Severity ; Details                         ;
++----------+-------+----------+---------------------------------+
+; B[31..3] ; Input ; Info     ; Stuck at GND                    ;
+; B[1..0]  ; Input ; Info     ; Stuck at GND                    ;
+; B[2]     ; Input ; Info     ; Stuck at VCC                    ;
++----------+-------+----------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mips:cpu_core|ControlUnit:CU|instruction_classifier:opcode_decoder"                       ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; opcode_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; F          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mips:cpu_core"                                                                            ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; rom_data   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; dbg_branch ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 8746                        ;
+;     CLR               ; 21                          ;
+;     CLR SCLR          ; 9                           ;
+;     ENA               ; 480                         ;
+;     ENA SCLR          ; 8192                        ;
+;     SCLR              ; 36                          ;
+;     plain             ; 8                           ;
+; arriav_lcell_comb     ; 4082                        ;
+;     arith             ; 129                         ;
+;         1 data inputs ; 72                          ;
+;         3 data inputs ; 17                          ;
+;         4 data inputs ; 8                           ;
+;         5 data inputs ; 32                          ;
+;     extend            ; 36                          ;
+;         7 data inputs ; 36                          ;
+;     normal            ; 3917                        ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 121                         ;
+;         4 data inputs ; 488                         ;
+;         5 data inputs ; 188                         ;
+;         6 data inputs ; 3111                        ;
+; boundary_port         ; 51                          ;
+;                       ;                             ;
+; Max LUT depth         ; 11.70                       ;
+; Average LUT depth     ; 6.70                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:36     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Mon Oct 27 11:07:21 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips_fpga_top -c mips_fpga_top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/signextend.sv
+    Info (12023): Found entity 1: signExtend File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/signExtend.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/shifter.sv
+    Info (12023): Found entity 1: shifter File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/shifter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/multiplexer.sv
+    Info (12023): Found entity 1: multiplexer File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/multiplexer.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/instruction_classifier.sv
+    Info (12023): Found entity 1: instruction_classifier File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/instruction_classifier.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/hex7seg.sv
+    Info (12023): Found entity 1: hex7seg File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/hex7seg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/edge_pulse.sv
+    Info (12023): Found entity 1: edge_pulse File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/edge_pulse.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/datamemory.sv
+    Info (12023): Found entity 1: dataMemory File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/dataMemory.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/controlunit.sv
+    Info (12023): Found entity 1: ControlUnit File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/controlUnit.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/button_debouncer.sv
+    Info (12023): Found entity 1: button_debouncer File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/button_debouncer.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/alu.sv
+    Info (12023): Found entity 1: alu File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/alu.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/modules/adder.sv
+    Info (12023): Found entity 1: adder File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/1_register_instructions/rom.sv
+    Info (12023): Found entity 1: ROM File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/1_register_instructions/regfile.sv
+    Info (12023): Found entity 1: regfile File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/1_register_instructions/pc.sv
+    Info (12023): Found entity 1: PC File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/1_register_instructions/byteim.sv
+    Info (12023): Found entity 1: ByteIM File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/mips.sv
+    Info (12023): Found entity 1: mips File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kyeen/documents/elec4720/modelsim_projects/assignment_2/mips_fpga_top.sv
+    Info (12023): Found entity 1: mips_fpga_top File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips_fpga_top.sv Line: 1
+Info (12127): Elaborating entity "mips_fpga_top" for the top level hierarchy
+Info (12128): Elaborating entity "button_debouncer" for hierarchy "button_debouncer:reset_db" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips_fpga_top.sv Line: 21
+Info (12128): Elaborating entity "edge_pulse" for hierarchy "edge_pulse:step_edge" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips_fpga_top.sv Line: 35
+Info (12128): Elaborating entity "mips" for hierarchy "mips:cpu_core" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips_fpga_top.sv Line: 67
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "mips:cpu_core|ControlUnit:CU" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 55
+Info (12128): Elaborating entity "instruction_classifier" for hierarchy "mips:cpu_core|ControlUnit:CU|instruction_classifier:opcode_decoder" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/controlUnit.sv Line: 32
+Info (12128): Elaborating entity "PC" for hierarchy "mips:cpu_core|PC:pc_inst" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 63
+Info (12128): Elaborating entity "ByteIM" for hierarchy "mips:cpu_core|ByteIM:rom_inst" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 69
+Info (12128): Elaborating entity "ROM" for hierarchy "mips:cpu_core|ByteIM:rom_inst|ROM:wordrom" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv Line: 11
+Warning (10850): Verilog HDL warning at ROM.sv(12): number of words (19) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv Line: 12
+Warning (10030): Net "mem.data_a" at ROM.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv Line: 5
+Warning (10030): Net "mem.waddr_a" at ROM.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv Line: 5
+Warning (10030): Net "mem.we_a" at ROM.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv Line: 5
+Info (12128): Elaborating entity "multiplexer" for hierarchy "mips:cpu_core|multiplexer:writeReg_multiplexer" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 83
+Info (12128): Elaborating entity "multiplexer" for hierarchy "mips:cpu_core|multiplexer:ALU_srcB_multiplexer" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 89
+Info (12128): Elaborating entity "regfile" for hierarchy "mips:cpu_core|regfile:regfile_inst" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 112
+Info (12128): Elaborating entity "signExtend" for hierarchy "mips:cpu_core|signExtend:signExtend_inst" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 117
+Info (12128): Elaborating entity "adder" for hierarchy "mips:cpu_core|adder:PCPlus4_adder" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 123
+Info (12128): Elaborating entity "alu" for hierarchy "mips:cpu_core|alu:ALU_inst" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 138
+Info (12128): Elaborating entity "dataMemory" for hierarchy "mips:cpu_core|dataMemory:data_mem" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv Line: 146
+Info (12128): Elaborating entity "hex7seg" for hierarchy "hex7seg:h0" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips_fpga_top.sv Line: 77
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276007): RAM logic "mips:cpu_core|dataMemory:data_mem|mem" is uninferred due to asynchronous read logic File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/dataMemory.sv Line: 14
+    Info (276004): RAM logic "mips:cpu_core|ByteIM:rom_inst|ROM:wordrom|mem" is uninferred due to inappropriate RAM size File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv Line: 5
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/kyeen/Documents/ELEC4720/quartus_projects/Assignment_2/db/mips_fpga_top.ram0_ROM_129fe666.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "sw[7]" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips_fpga_top.sv Line: 5
+    Warning (15610): No output dependent on input pin "sw[8]" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips_fpga_top.sv Line: 5
+    Warning (15610): No output dependent on input pin "sw[9]" File: C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips_fpga_top.sv Line: 5
+Info (21057): Implemented 12804 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 38 output pins
+    Info (21061): Implemented 12753 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 5001 megabytes
+    Info: Processing ended: Mon Oct 27 11:08:09 2025
+    Info: Elapsed time: 00:00:48
+    Info: Total CPU time (on all processors): 00:00:45
+
+

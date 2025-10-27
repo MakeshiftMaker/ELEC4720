@@ -9,6 +9,6 @@ assign Dout = mem[Ad];
 // in text file program.dat
 // written in Hex format
 initial begin
-$readmemh("program.dat",mem); //$readmemb for binary
+$readmemh("program.txt",mem); //$readmemb for binary
 end
 endmodule

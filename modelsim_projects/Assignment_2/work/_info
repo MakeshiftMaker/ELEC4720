@@ -11,26 +11,26 @@ cModel Technology
 d/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_1
 vadder
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1760923968
+Z1 !s110 1761523440
 !i10b 1
 !s100 bE02S]CLMbg3h]Am92UVN1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I6fOXao5a?h]<njaOmIDcB1
+IJc@[6B5FLU6E1f:hUSQ7l0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z4 d/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2
-w1760314804
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/adder.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/adder.sv
-!i122 388
+Z4 dC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2
+w1761117818
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/adder.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/adder.sv
+!i122 478
 Z5 L0 1 11
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1760923968.000000
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/adder.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/adder.sv|
+Z7 !s108 1761523440.000000
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/adder.sv|
 !i113 1
 Z8 o-work work -sv
 Z9 tCvgOpt 0
@@ -38,37 +38,37 @@ valu
 R0
 R1
 !i10b 1
-!s100 zUhJfb2f5=k[8^2Om=:_E3
+!s100 [PWQRWFA3n5ELLQ6g81932
 R2
-IeemnN]8jYnI8C7C4]VZ7W1
+I0XVdd8e0@@MHNElbmk12<1
 R3
 S1
 R4
-w1760316348
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/alu.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/alu.sv
-!i122 381
-L0 1 70
+w1761121595
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/alu.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/alu.sv
+!i122 479
+L0 1 74
 R6
 r1
 !s85 0
 31
-Z10 !s108 1760923967.000000
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/alu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/alu.sv|
+R7
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/alu.sv|
 !i113 1
 R8
 R9
 valu_control
 R0
-Z11 !s110 1760317044
+Z10 !s110 1760317044
 !i10b 1
 !s100 4bGiC@BUIMlk8T=igcWnd1
 R2
 I72MWS=FbFV[3FLJNGkkO;0
 R3
 S1
-R4
+Z11 d/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2
 Z12 w1760308301
 Z13 8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/chatgpt_mips.sv
 Z14 F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/chatgpt_mips.sv
@@ -84,42 +84,66 @@ Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH
 !i113 1
 R8
 R9
-vByteIM
+vbutton_debouncer
 R0
-Z18 !s110 1760923967
+Z18 !s110 1761191427
 !i10b 1
-!s100 3R84zMa=<;K8]3<YaL>oc1
+!s100 >8;3]`n2D;<jY=dW9N3Sz2
 R2
-I7O?keQ8?OZUaXgIPiXzm<0
+I]z2fIoI_SDVQW9R7P>W8G3
 R3
 S1
 R4
-w1760921420
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv
-!i122 376
+w1761190115
+8modules\button_debouncer.sv
+Fmodules\button_debouncer.sv
+!i122 471
+L0 1 33
+R6
+r1
+!s85 0
+31
+Z19 !s108 1761191427.000000
+Z20 !s107 mips.sv|1_Register_Instructions\regfile.sv|1_Register_Instructions\ByteIM.sv|1_Register_Instructions\ROM.sv|1_Register_Instructions\PC.sv|modules\dataMemory.sv|modules\adder.sv|modules\multiplexer.sv|modules\signExtend.sv|modules\alu.sv|modules\controlUnit.sv|modules\instruction_classifier.sv|modules\edge_pulse.sv|modules\button_debouncer.sv|modules\hex7seg.sv|mips_fpga_top.sv|
+Z21 !s90 mips_fpga_top.sv|modules\hex7seg.sv|modules\button_debouncer.sv|modules\edge_pulse.sv|modules\instruction_classifier.sv|modules\controlUnit.sv|modules\alu.sv|modules\signExtend.sv|modules\multiplexer.sv|modules\adder.sv|modules\dataMemory.sv|1_Register_Instructions\PC.sv|1_Register_Instructions\ROM.sv|1_Register_Instructions\ByteIM.sv|1_Register_Instructions\regfile.sv|mips.sv|
+!i113 1
+R9
+vByteIM
+R0
+Z22 !s110 1761523439
+!i10b 1
+!s100 3R84zMa=<;K8]3<YaL>oc1
+R2
+I0Edh55l?icDbCdLDYazif2
+R3
+S1
+R4
+w1759136002
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv
+!i122 472
 L0 1 12
 R6
 r1
 !s85 0
 31
-R10
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv|
+Z23 !s108 1761523439.000000
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ByteIM.sv|
 !i113 1
 R8
 R9
 n@byte@i@m
 vcontrol_unit
 R0
-R11
+R10
 !i10b 1
 !s100 aW09o_gTGg`Cn5YFiTK`73
 R2
 I;o2?3T[3f;9@Uz0Pj4[^b3
 R3
 S1
-R4
+R11
 R12
 R13
 R14
@@ -139,88 +163,186 @@ vControlUnit
 R0
 R1
 !i10b 1
-!s100 Hh5_Y3Gl5fnZk`AQhd0WG2
+!s100 z8XGN2>oEC;Uk5<:H1`2D1
 R2
-Ij[VPLU_XeaWj[IgX]oNTY0
+IdLo>?UhlJ_>kVNCi<9ej82
 R3
 S1
 R4
-w1760915317
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/controlUnit.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/controlUnit.sv
-!i122 390
-L0 5 66
+w1761125155
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/controlUnit.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/controlUnit.sv
+!i122 480
+L0 5 94
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/controlUnit.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/controlUnit.sv|
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/controlUnit.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/controlUnit.sv|
 !i113 1
 R8
 R9
 n@control@unit
+vdataMemory
+R0
+Z24 !s110 1761523441
+!i10b 1
+!s100 F?=OHTX:lZSjf]Fh8I?N>1
+R2
+IE_;FG>I]W8A=FLaI9>d4d3
+R3
+S1
+R4
+w1761124441
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/dataMemory.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/dataMemory.sv
+!i122 487
+L0 1 35
+R6
+r1
+!s85 0
+31
+Z25 !s108 1761523441.000000
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/dataMemory.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/dataMemory.sv|
+!i113 1
+R8
+R9
+ndata@memory
+vedge_pulse
+R0
+R18
+!i10b 1
+!s100 f7ZnWIz;KOl:cjEPF<>NE2
+R2
+IL;XLR6`PH<KXDUeSc7aB<2
+R3
+S1
+R4
+w1761190131
+8modules\edge_pulse.sv
+Fmodules\edge_pulse.sv
+!i122 471
+R5
+R6
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R9
+vhex7seg
+R0
+R18
+!i10b 1
+!s100 zJ>oLc4mNC:>3YcoLS@2N0
+R2
+IPH=?hUjBM_E:S87^?F6O]1
+R3
+S1
+R4
+w1761190149
+8modules\hex7seg.sv
+Fmodules\hex7seg.sv
+!i122 471
+L0 1 26
+R6
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R9
 vinstruction_classifier
 R0
 R1
 !i10b 1
 !s100 4D=JZ4eG_Dzm_IWzN=jW?3
 R2
-I``OaEHO2F2_mTLghVRo=G2
+I_j[[W1O^znnzLL`3dQOjY1
 R3
 S1
 R4
-w1757209544
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/instruction_classifier.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/instruction_classifier.sv
-!i122 382
+Z26 w1758506104
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/instruction_classifier.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/instruction_classifier.sv
+!i122 481
 L0 1 32
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/instruction_classifier.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/instruction_classifier.sv|
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/instruction_classifier.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/instruction_classifier.sv|
 !i113 1
 R8
 R9
 vmips
 R0
-R18
+R1
 !i10b 1
-!s100 ;e>7S_`mg?4?PfkgGZSoW2
+!s100 aRTgOC;DBk<N4_M]NZY2m1
 R2
-IC:VVTInDI8hG1o`d9NCzY0
+IX=R02:QNJ5XQ9FfdZ@Yj=0
 R3
 S1
 R4
-w1760920858
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv
-!i122 379
-L0 1 143
+w1761189945
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv
+!i122 477
+L0 1 153
 R6
 r1
 !s85 0
 31
-R10
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/mips.sv|
+R7
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/mips.sv|
 !i113 1
 R8
 R9
+vmips_fpga_top
+R0
+R18
+!i10b 1
+!s100 LnTmFT9<YX_CfEVWDMP<Y2
+R2
+I3k[fQgh4iTR0z?DTf6gKX1
+R3
+S1
+R4
+w1761190276
+8mips_fpga_top.sv
+Fmips_fpga_top.sv
+!i122 471
+L0 1 90
+R6
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R9
 vmips_top
 R0
-R11
+R10
 !i10b 1
 !s100 AFJ5X<]j:7c0gjXKa3U=E2
 R2
 IT_?8FacfQZ;m@N4IEa`a82
 R3
 S1
-R4
+R11
 R12
 R13
 R14
@@ -242,98 +364,98 @@ R1
 !i10b 1
 !s100 kT4Zz<8fKBWVfFL3hQM@E0
 R2
-IHD2>Ml[K>X>CENZmh68?D2
+I;3nf=c[;8>V[]AC5DbTiD0
 R3
 S1
 R4
-w1760309331
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv
-!i122 386
+Z27 w1760318588
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/multiplexer.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/multiplexer.sv
+!i122 482
 L0 2 14
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/multiplexer.sv|
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/multiplexer.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/multiplexer.sv|
 !i113 1
 R8
 R9
 vPC
 R0
-R18
+R22
 !i10b 1
 !s100 >MCNOHi@cH?IX=RQOC80o2
 R2
-I<g;zU[3HJAc[TWg^C?7zN2
+IGAkaD;R2X^=EdA`Q9?MgJ1
 R3
 S1
 R4
-w1760315586
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv
-!i122 380
+R27
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv
+!i122 473
 L0 1 17
 R6
 r1
 !s85 0
 31
-R10
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv|
+R23
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/PC.sv|
 !i113 1
 R8
 R9
 n@p@c
 vregfile
 R0
-R18
+R22
 !i10b 1
-!s100 ;ga_dgEZ:WCV_2hB4_gh31
+!s100 o9>1^>h1Y9mWVR7mZ=UXC0
 R2
-Ij7>jo3>V@^ST8>d;[8N3N1
+IZ=6f:Xo`19D;l6l9PS`PR1
 R3
 S1
 R4
-w1760923964
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv
-!i122 377
-R5
+w1761189896
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv
+!i122 474
+Z28 L0 1 14
 R6
 r1
 !s85 0
 31
-R10
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv|
+R23
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/regfile.sv|
 !i113 1
 R8
 R9
 vROM
 R0
-R18
+R1
 !i10b 1
-!s100 Pflb=]1PCd[j=TLU@lj[e2
+!s100 J1oN6he1Og4I23>P_h>L[0
 R2
-IJUXlB:Z7UjiRP2ccSbP8[0
+Ih7LS_L<RaS>Pm`]mW8k_Y3
 R3
 S1
 R4
-w1758507825
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv
-!i122 378
-L0 1 14
+w1761193436
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv
+!i122 475
+R28
 R6
 r1
 !s85 0
 31
-R10
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv|
+R23
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/ROM.sv|
 !i113 1
 R8
 R9
@@ -344,111 +466,136 @@ R1
 !i10b 1
 !s100 ?BT@iz497Z`R0kcobcieL0
 R2
-IXH:BoOYROk0RF8o4jcRF23
+I2=N5^?bYZTociViekm8Mc2
 R3
 S1
 R4
-w1760314850
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/shifter.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/shifter.sv
-!i122 389
-Z19 L0 1 19
+R27
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/shifter.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/shifter.sv
+!i122 483
+L0 1 19
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/shifter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/shifter.sv|
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/shifter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/shifter.sv|
 !i113 1
 R8
 R9
 vsignExtend
 R0
-R1
+R24
 !i10b 1
 !s100 HhoiREWGo`fk12XDQS3Ag0
 R2
-IdWKLOA7gLcI^Z_`R[3ERh1
+IOam;8KABEkV4cidIcNkRB2
 R3
 S1
 R4
-w1760310565
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/signExtend.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/signExtend.sv
-!i122 387
+R27
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/signExtend.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/signExtend.sv
+!i122 484
 L0 1 6
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/signExtend.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/signExtend.sv|
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/signExtend.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/signExtend.sv|
 !i113 1
 R8
 R9
 nsign@extend
 vtb_alu
 R0
-R1
+R24
 !i10b 1
 !s100 fjEGG>FPmO:QJnVbS14d=0
 R2
-I?`F[`TZgO`JF>OK7FklDA2
+IWMEz<0:ml`822Sh@BhOE<0
 R3
 S1
 R4
-w1757207902
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_alu.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_alu.sv
-!i122 383
+R26
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_alu.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_alu.sv
+!i122 485
 L0 3 46
 R6
 r1
 !s85 0
 31
-R7
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_alu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_alu.sv|
+R25
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_alu.sv|
+!i113 1
+R8
+R9
+vtb_branch_loop
+R0
+R24
+!i10b 1
+!s100 X[NMCHS_G<P>QQDLT3_=W0
+R2
+IG6nnTno2X3@YN<di_Y24h2
+R3
+S1
+R4
+w1761191332
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/tb_branch_loop.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/tb_branch_loop.sv
+!i122 489
+L0 1 66
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/tb_branch_loop.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/1_Register_Instructions/tb_branch_loop.sv|
 !i113 1
 R8
 R9
 vtb_instruction_classifier
 R0
-R1
+R24
 !i10b 1
-!s100 :[z`V6;6>H74Ckkj]SHGM1
+!s100 c9VB@9a;Iiaa5iL3@Cb6b1
 R2
-IDL4>6?8ajdY8CROnGK2G_3
+I:4IVDH2J8D>Ia;CaB;=Bc2
 R3
 S1
 R4
-w1756695040
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv
-!i122 384
-R19
+w1761120294
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv
+!i122 486
+L0 1 68
 R6
 r1
 !s85 0
 31
-R7
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv|
+R25
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_instruction_classifier.sv|
 !i113 1
 R8
 R9
 vtb_mips
 R0
-R11
+R10
 !i10b 1
 !s100 aT[CEma6<?QiNA=47@Q2z2
 R2
 I1W73LikjQCQ=mk[2?dLzP1
 R3
 S1
-R4
+R11
 R12
 R13
 R14
@@ -468,24 +615,49 @@ vtb_mips1
 R0
 R1
 !i10b 1
-!s100 I@1FfY_G3WoNF2E5]9PiW2
+!s100 K2WfMnEY>`8En8TF>6ehX3
 R2
-I7>_=4Fc]Qo60Ja4WKX8_53
+IH3G=?@olVR<[;A8l]Alnd2
 R3
 S1
 R4
-w1760922287
-8/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv
-F/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv
-!i122 385
-L0 1 44
+w1761191124
+8C:\Users\kyeen\Documents\ELEC4720\modelsim_projects\Assignment_2\1_Register_Instructions\tb_mips1.sv
+FC:\Users\kyeen\Documents\ELEC4720\modelsim_projects\Assignment_2\1_Register_Instructions\tb_mips1.sv
+!i122 476
+L0 1 275
 R6
 r1
 !s85 0
 31
 R7
-!s107 /home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/maker/Documents/FH/WS2025/Programmable_Logic_Design/modelsim_projects/Assignment_2/1_Register_Instructions/tb_mips1.sv|
+!s107 C:\Users\kyeen\Documents\ELEC4720\modelsim_projects\Assignment_2\1_Register_Instructions\tb_mips1.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\kyeen\Documents\ELEC4720\modelsim_projects\Assignment_2\1_Register_Instructions\tb_mips1.sv|
+!i113 1
+R8
+R9
+vtb_rtype_program
+R0
+R24
+!i10b 1
+!s100 <C>^LMOkQde]HFAbDlmi11
+R2
+I_z6X9HUQ_5jgocHIogi540
+R3
+S1
+R4
+w1761121632
+8C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_rtype_program.sv
+FC:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_rtype_program.sv
+!i122 488
+L0 1 188
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_rtype_program.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/kyeen/Documents/ELEC4720/modelsim_projects/Assignment_2/modules/tb_rtype_program.sv|
 !i113 1
 R8
 R9

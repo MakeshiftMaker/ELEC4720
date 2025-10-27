@@ -1,0 +1,133 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'edge_pulse:step_edge|pulse'
+Slack : -15.107
+TNS   : -106433.314
+
+Type  : Slow 1100mV 85C Model Setup 'clk_50'
+Slack : -2.316
+TNS   : -141.635
+
+Type  : Slow 1100mV 85C Model Hold 'clk_50'
+Slack : 0.442
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'edge_pulse:step_edge|pulse'
+Slack : 1.096
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'edge_pulse:step_edge|pulse'
+Slack : -3.134
+TNS   : -110.786
+
+Type  : Slow 1100mV 85C Model Removal 'edge_pulse:step_edge|pulse'
+Slack : 0.538
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'edge_pulse:step_edge|pulse'
+Slack : -0.538
+TNS   : -6984.112
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_50'
+Slack : -0.538
+TNS   : -51.136
+
+Type  : Slow 1100mV 0C Model Setup 'edge_pulse:step_edge|pulse'
+Slack : -15.052
+TNS   : -103504.519
+
+Type  : Slow 1100mV 0C Model Setup 'clk_50'
+Slack : -2.355
+TNS   : -144.453
+
+Type  : Slow 1100mV 0C Model Hold 'clk_50'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'edge_pulse:step_edge|pulse'
+Slack : 1.137
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'edge_pulse:step_edge|pulse'
+Slack : -3.035
+TNS   : -107.171
+
+Type  : Slow 1100mV 0C Model Removal 'edge_pulse:step_edge|pulse'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'edge_pulse:step_edge|pulse'
+Slack : -0.538
+TNS   : -7769.024
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : -0.538
+TNS   : -54.880
+
+Type  : Fast 1100mV 85C Model Setup 'edge_pulse:step_edge|pulse'
+Slack : -7.842
+TNS   : -54128.477
+
+Type  : Fast 1100mV 85C Model Setup 'clk_50'
+Slack : -0.812
+TNS   : -38.026
+
+Type  : Fast 1100mV 85C Model Hold 'clk_50'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'edge_pulse:step_edge|pulse'
+Slack : 0.477
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'edge_pulse:step_edge|pulse'
+Slack : -1.316
+TNS   : -45.632
+
+Type  : Fast 1100mV 85C Model Removal 'edge_pulse:step_edge|pulse'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_50'
+Slack : -0.422
+TNS   : -6.731
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'edge_pulse:step_edge|pulse'
+Slack : 0.044
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'edge_pulse:step_edge|pulse'
+Slack : -6.895
+TNS   : -47425.274
+
+Type  : Fast 1100mV 0C Model Setup 'clk_50'
+Slack : -0.743
+TNS   : -32.403
+
+Type  : Fast 1100mV 0C Model Hold 'clk_50'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'edge_pulse:step_edge|pulse'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'edge_pulse:step_edge|pulse'
+Slack : -1.112
+TNS   : -38.447
+
+Type  : Fast 1100mV 0C Model Removal 'edge_pulse:step_edge|pulse'
+Slack : 0.025
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : -0.420
+TNS   : -6.544
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'edge_pulse:step_edge|pulse'
+Slack : 0.041
+TNS   : 0.000
+
+------------------------------------------------------------
